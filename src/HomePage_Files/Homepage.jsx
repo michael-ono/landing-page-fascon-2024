@@ -14,7 +14,7 @@ import Footer from "../Navbar_Files/Footer";
 import ImageSlider from "./ImageSilder";
 import SlickSlider from "../components/SlickSlider";
 
-function Homepage() {
+const Homepage = () => {
 
     //Set the Courses List
     const [courseList, setCourses] = useState({ 
@@ -77,10 +77,10 @@ function Homepage() {
                             FASCON 2024: International Confrence of the Faculty of Natural and Applied Sciences
                         </h1>
                         <p className="text-[1.2rem] text-blue-900 font-extrabold">
-                            Lagos, Nigeria
+                            Ibadan, Nigeria
                         </p>
                         <p className="text-[1rem] text-black">
-                            FASCON 2024 is being organized in cooperation with the ACM Special Interest Group on Computer-Human Interaction (SIGCHI).
+                            FASCON 2024 is being organized by the Faculty of Natural and Applied Sciences Leady City University
                         </p>
                         <button
                             className=" focus:outline-none bg-blue-300 hover:bg-blue-500 focus:ring-2 focus:ring-blue-300 font-medium text-md px-14 py-3"
