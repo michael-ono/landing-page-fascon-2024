@@ -73,7 +73,7 @@ const Homepage = () => {
 
                 <div className="flex flex-wrap p-5 text-[#ffff] text-black">
                     <div className="w-full md:w-1/2 pl-14 space-y-5 pt-8 pb-7">
-                        <h1 className="text-[3rem] w-[40rem] flex leading-[3.4rem] font-semibold tracking-normal">
+                        <h1 className=" text-[3rem] w-[40rem] flex leading-[3.4rem] font-semibold tracking-normal">
                             FASCON 2024: International Confrence of the Faculty of Natural and Applied Sciences
                         </h1>
                         <p className="text-[1.2rem] text-blue-900 font-extrabold">
@@ -92,7 +92,7 @@ const Homepage = () => {
                     </div>
 
                     <div className="w-full md:w-1/2">
-                        <img src="https://workspaces.nyc/wp-content/uploads/2023/11/8.jpg" height="30" alt="" />
+                        <img src="https://workspaces.nyc/wp-content/uploads/2023/11/8.jpg" height="500" width="500" alt="" />
                     </div>
                 </div>
 {/* 
