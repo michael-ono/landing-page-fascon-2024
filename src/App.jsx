@@ -4,7 +4,6 @@ import Homepage from "./HomePage_Files/Homepage";
 import About from "./components/About";
 import HomeContact from "./HomePage_Files/HomeContact";
 
-import Tutor from "./Tutor_Files/Tutor";
 import LoginForm from "./Login_Files/LoginForm";
 import RegisterForm from "./Login_Files/RegisterForm";
 import TutorRegister from "./Login_Files/TutorRegister";
