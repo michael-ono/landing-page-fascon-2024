@@ -1,32 +1,20 @@
 import { Route, Routes } from "react-router-dom";
 
 import Homepage from "./HomePage_Files/Homepage";
-import About from "./HomePage_Files/About";
+import About from "./components/About";
 import Services from "./HomePage_Files/Services";
 import HomeContact from "./HomePage_Files/HomeContact";
 
-import UserDashboard from "./User_Files/UserDashboard";
-import UserAllCourses from "./User_Files/UserAllCourses";
-import UserProfile from "./User_Files/UserProfile";
-import UserContact from "./User_Files/UserContact";
-import UserSettings from "./User_Files/UserSettings";
-
 import Tutor from "./Tutor_Files/Tutor";
-import TutorPublish from "./Tutor_Files/TutorPublish";
-import TutorContact from "./Tutor_Files/TutorContact";
-
 import LoginForm from "./Login_Files/LoginForm";
 import RegisterForm from "./Login_Files/RegisterForm";
 import TutorRegister from "./Login_Files/TutorRegister";
 import LoginTutor from "./Login_Files/LoginTutor";
 
-import MachineLearning from "./Course_Files/machineLearning";
-import PythonProgramming from "./Course_Files/pythonProgramming";
-import CourseFile from "./Course_Files/courseFile";
 import Organizers from "./components/Organizers";
 import Registration from "./components/Registration";
 import Attending from "./components/Attending";
-import Updates from "./HomePage_Files/Updates";
+import Updates from "./components/Updates";
 
 function App() {
 
