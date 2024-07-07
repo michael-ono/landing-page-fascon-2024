@@ -23,6 +23,8 @@ import LoginTutor from "./Login_Files/LoginTutor";
 import MachineLearning from "./Course_Files/machineLearning";
 import PythonProgramming from "./Course_Files/pythonProgramming";
 import CourseFile from "./Course_Files/courseFile";
+import Organizers from "./components/Organizers";
+import Registration from "./components/Registration";
 
 function App() {
 
@@ -31,8 +33,9 @@ function App() {
       {/* HomePage */}
       <Route path="/" exact element={<Homepage />} />
       <Route path="/about" element={<About />} />
-      <Route path="/services" element={<Services />} />
+      <Route path="/registration" element={<Registration />} />
       <Route path="/contact" element={<HomeContact />} />
+      <Route path="/organizers" element={<Organizers />} />
    
       {/* User */} 
       {/* <Route element={<PrivateRouteUser isLogged={userLogged} />}> */}

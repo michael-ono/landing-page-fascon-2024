@@ -13,6 +13,7 @@ import Footer from "../Navbar_Files/Footer";
 
 import ImageSlider from "./ImageSilder";
 import SlickSlider from "../components/SlickSlider";
+import Sponsors from "../components/Sponsors";
 
 const Homepage = () => {
 
@@ -45,7 +46,7 @@ const Homepage = () => {
             });
 
             //console.log(courseList)
-            setCourses(mappedCourses);
+            setCourses(mappedCourses); 
 
         }
         catch (error) {
@@ -71,30 +72,19 @@ const Homepage = () => {
             <HomepageNavbar />
             <div className="pb-16 select-none">
 
-                <div className="flex flex-wrap p-5 text-[#ffff] text-black">
-                    <div className="w-full md:w-1/2 pl-14 space-y-5 pt-8 pb-7">
-                        <h1 className=" text-[3rem] w-[40rem] flex leading-[3.4rem] font-semibold tracking-normal">
-                            FASCON 2024: International Confrence of the Faculty of Natural and Applied Sciences
-                        </h1>
-                        <p className="text-[1.2rem] text-blue-900 font-extrabold">
-                            Ibadan, Nigeria
-                        </p>
-                        <p className="text-[1.05rem] text-black pr-12">
-                            FASCON 2024 is being organized by the Faculty of Natural and Applied Sciences Lead City University
-                        </p>
-                        <button
-                            className=" focus:outline-none bg-blue-300 hover:bg-blue-500 focus:ring-2 focus:ring-blue-300 font-medium text-md px-14 py-3"
-                            onClick={() => navigateSignup(registerPath)} 
-                        >
-                            Register
-                        </button>
-                        <p className="mt-8"></p>
+                <div className="flex flex-wrap p-5 text-black">  
+                    <div className="w-full md:w-1/2 pl-14 space-y-4 pt-8 pb-7">
+                        <h1 className="text-4xl pr-3 leading-tight font-semibold tracking-normal break-words">  FASCON 2024: The 4th International Conference of the Faculty of Natural and Applied Sciences</h1>
+                        <p className="text-blue-900 text-2xl font-extrabold">29 -31 October, 2024</p>
+                        <p className="text-blue-900 text-2xl font-extrabold">Ibadan, Nigeria</p>
+                        <p className="text-lg text-black pr-12">FASCON 2024 is being organized by the Faculty of Natural and Applied Sciences, Lead City University</p>
+                        <button className="focus:outline-none bg-blue-300 hover:bg-blue-500 focus:ring-2 focus:ring-blue-300 font-medium text-md px-14 py-3" onClick={() => navigateSignup(registerPath)}>Register</button>
                     </div>
-
                     <div className="w-full md:w-1/2">
-                        <img src="https://workspaces.nyc/wp-content/uploads/2023/11/8.jpg" height="500" width="500" alt="" />
-                    </div>
+                      <img src="https://workspaces.nyc/wp-content/uploads/2023/11/8.jpg" alt="Image description"/> 
+                    </div>  
                 </div>
+
 {/* 
                 <div className="bg-gray-300 text-4xl px-5 py-4 pl-[5rem] font-semibold">
                     <div className="container mx-auto text-center text-blue-900">
@@ -103,7 +93,7 @@ const Homepage = () => {
                 </div> */}
 
                 <div className="px-5 pb-5">
-                    <SlickSlider listOfItems={courseList} />
+                    <Sponsors />
                 </div>
 
                 {/* <div className="bg-gray-300 text-4xl px-5 py-4 pl-[5rem] font-semibold">

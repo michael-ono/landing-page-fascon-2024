@@ -28,8 +28,8 @@ function HomepageNavbar() {
     const NavMenus = [
         { title: "HOME", path: "/" },
         { title: "PROGAM / SCHEDULE", path: "/about" },
-        { title: "REGISTRATION", path: "/services" },
-        { title: "ATTENDING", path: "/contact" },
+        { title: "REGISTRATION", path: "/registration" },
+        { title: "ATTENDING", path: "/attending" },
         { title: "UPDATES", path: "/updates" },
         { title: "ORGANIZERS", path: "/organizers" },
     ];
@@ -51,7 +51,7 @@ function HomepageNavbar() {
                 <div className={`nav-links bg-gray-800 duration-500 md:static absolute md:min-h-fit min-h-[45vh] left-0 ${isMenuOpen ? 'top-[10%]' : 'top-[-100%]'} md:w-auto w-full flex items-center px-5`}>
                     <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                         {NavMenus.map((Menu, index) => (
-                            <li key={index}  className="cursor-pointer text-[0.8rem] hover:text-blue-600 ">
+                            <li key={index}  className="cursor-pointer text-[0.8rem] hover:text-blue-600"  onClick={() => navigate(Menu.path)}>
                                 <span>{Menu.title}</span>
                             </li>
                         ))}
