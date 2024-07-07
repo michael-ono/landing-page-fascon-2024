@@ -1,15 +1,15 @@
 import React from 'react'
 import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
 
-const Registration = () => {
+const Updates = () => {
   return (
     <>
     <HomepageNavbar />
     <div>
-      Register here
+      Check out the latest updates here
     </div>
     </>
   )
 }
 
-export default Registration;
+export default Updates;

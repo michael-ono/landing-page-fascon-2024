@@ -25,6 +25,8 @@ import PythonProgramming from "./Course_Files/pythonProgramming";
 import CourseFile from "./Course_Files/courseFile";
 import Organizers from "./components/Organizers";
 import Registration from "./components/Registration";
+import Attending from "./components/Attending";
+import Updates from "./HomePage_Files/Updates";
 
 function App() {
 
@@ -34,7 +36,8 @@ function App() {
       <Route path="/" exact element={<Homepage />} />
       <Route path="/about" element={<About />} />
       <Route path="/registration" element={<Registration />} />
-      <Route path="/contact" element={<HomeContact />} />
+      <Route path="/attending" element={<Attending />} />
+      <Route path="/updates" element={<Updates />} />
       <Route path="/organizers" element={<Organizers />} />
    
       {/* User */} 
