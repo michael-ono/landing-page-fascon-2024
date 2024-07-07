@@ -1,5 +1,5 @@
 import React from 'react'
-import HomepageNavbar from "./HomepageNavbar";
+import HomepageNavbar from "../HomePage_Files/HomepageNavbar";
 import aboutBg from "../assets/about-us-bg2.svg";
 
 export default function About() {

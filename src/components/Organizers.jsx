@@ -19,10 +19,10 @@ const Organizers = () => {
           <div className='mt-14'>
             {/* Orginizer 1 */}
             <div>
-              <h1 className='text-2xl font-semibold pl-6'>
+              <h1 className='text-2xl text-center font-semibold pl-6'>
                 Local Orginizing Committee (LOC)
               </h1>
-              <div className="flex flex-wrap items-center justify-center gap-10 mt-2 md:justify-around px-4">
+              <div className="flex flex-wrap pt-6 items-center justify-center gap-10 mt-2 md:justify-around px-4">
                 {/* placeholder-1 */}
                 <div className="text-black flex flex-col justify-center items-center">
                   <img
@@ -47,10 +47,10 @@ const Organizers = () => {
             </div>
             {/* Orginizer 2 */}
             <div className='mt-12'>
-              <h1 className='text-2xl font-semibold pl-6'>
+              <h1 className='text-2xl text-center font-semibold pl-6'>
                 Fund-raising Committee
               </h1>
-              <div className="flex flex-wrap items-center justify-center gap-10 mt-2 md:justify-around px-4">
+              <div className="flex flex-wrap pt-6 items-center justify-center gap-10 mt-2 md:justify-around px-4">
                 {/* placeholder-1 */}
                 <div className="text-black flex flex-col justify-center items-center">
                   <img

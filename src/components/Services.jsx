@@ -1,5 +1,5 @@
 import React from 'react'
-import HomepageNavbar from "./HomepageNavbar";
+import HomepageNavbar from "../HomePage_Files/HomepageNavbar";
 import servicesBg from "../assets/shiny-overlay2.svg";
 import Footer from '../Navbar_Files/Footer';
 
