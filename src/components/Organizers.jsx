@@ -31,7 +31,7 @@ const Organizers = () => {
                     width="40"
                     height="40"
                   />
-                  <h1>Dr W. Sakpere (LOC Chair), Computer Science</h1>
+                  <h1 className=''>Dr W. Sakpere (LOC Chair), Computer Science</h1>
                 </div>
                 {/* placeholder-2 */}
                 <div className="text-black flex flex-col justify-center items-center">
@@ -100,6 +100,125 @@ const Organizers = () => {
                     height="40"
                   />
                   <h1>Ms I.M. Fatoki, Computer Science</h1>
+                </div>
+
+              </div>
+            </div>
+            {/* Orginizer 3 */}
+            <div className='mt-12'>
+              <h1 className='text-2xl text-center font-semibold pl-6'>
+              Scientific/Technical Programme Committee
+              </h1>
+              <div className="flex flex-wrap pt-6 items-center justify-center gap-10 mt-2 md:justify-around px-4">
+                {/* placeholder-1 */}
+                <div className="text-black flex flex-col justify-center items-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 1 Logo"
+                    width="40"
+                    height="40"
+                  />
+                  <h1>Prof. B.A. Adebo (Chair), Physics/Geology</h1>
+                </div>
+                {/* placeholder-2 */}
+                <div className="text-black flex flex-col justify-center items-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 2 Logo"
+                    width="40"
+                    height="40"
+                  />
+                  <h1>Prof. O.M. Ighodaro, Chemical Sciences</h1>
+                </div>
+                {/* placeholder-3 */}
+                <div className="text-black flex flex-col justify-center items-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 3 Logo"
+                    width="40"
+                    height="40"
+                  />
+                  <h1>Dr O.O. Ogunlaja, Chemical Sciences</h1>
+                </div>
+                {/* placeholder-4 */}
+                <div className="text-black flex flex-col justify-center items-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 4 Logo"
+                    width="40"
+                    height="40"
+                  />
+                  <h1>DDr F.C. Adesina, Biological Sciences</h1>
+                </div>
+                {/* placeholder-5 */}
+                <div className="text-black flex flex-col justify-center items-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 5 Logo"
+                    width="40"
+                    height="40"
+                  />
+                  <h1>Dr A.A. Waheed, Computer Science</h1>
+                </div>
+                {/* placeholder-6 */}
+                <div className="text-black flex flex-col justify-center items-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 6 Logo"
+                    width="40"
+                    height="40"
+                  />
+                  <h1>Dr H.K. Otobrise, Physics/Geology</h1>
+                </div>
+                {/* placeholder-7 */}
+                <div className="text-black flex flex-col justify-center items-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 7 Logo"
+                    width="40"
+                    height="40"
+                  />
+                  <h1>Dr O.K. Sindiku, Biological Sciences</h1>
+                </div>
+                {/* placeholder-8 */}
+                <div className="text-black flex flex-col justify-center items-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 8 Logo"
+                    width="40"
+                    height="40"
+                  />
+                  <h1>Dr A.M. Ayoade, Computer Science</h1>
+                </div>
+                {/* placeholder-9 */}
+                <div className="text-black flex flex-col justify-center items-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 9 Logo"
+                    width="40"
+                    height="40"
+                  />
+                  <h1>Dr O.K. Oderinde, Chemical Sciences</h1>
+                </div>
+                {/* placeholder-10 */}
+                <div className="text-black flex flex-col justify-center items-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 10 Logo"
+                    width="40"
+                    height="40"
+                  />
+                  <h1>Dr O.I. Abiola-Olagunju, Biological Sciences</h1>
+                </div>
+                {/* placeholder-11 */}
+                <div className="text-black flex flex-col justify-center items-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 11 Logo"
+                    width="40"
+                    height="40"
+                  />
+                  <h1 className='font-semibold w-4/6'>Ex-officio Members: All Professors of FONAS (Professors Fatoki, Akinola, Idowu, Sunmonu)</h1>
                 </div>
 
               </div>
