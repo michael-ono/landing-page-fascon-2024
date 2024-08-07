@@ -10,7 +10,7 @@ const Blog = () => {
       <Row>
 
           <div className="">
-            <h1  className="text-center titleHeading mb-3 mt-4 text-black">Latest Updates</h1>
+            <h1  className="text-center titleHeading mb-3 mt-4 text-white">Latest Updates</h1>
           </div>
 
         <Col lg={8} className="offset-lg-2">

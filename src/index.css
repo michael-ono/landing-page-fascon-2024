@@ -6,3 +6,27 @@
     background-image: linear-gradient(rgba(5, 0, 32, 0.697), rgba(5, 0, 32, 0.697)), url('./assets/bg-support.jpeg');
     overflow: hidden;
 }
+
+.hero-bg {
+    /* height: 100;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/homepageBg2.svg"); */
+}
+
+.about-bg {
+    /* height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/homepageBg2.svg"); */
+}
+
+.registration-bg {
+    /* height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/homepageBg2.svg"); */
+}

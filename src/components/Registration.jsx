@@ -1,13 +1,14 @@
 import React from 'react'
 import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
+import "../App.css";
 
 const Registration = () => {
   return (
     <>
     <HomepageNavbar />
-    <div className='pl-4'>
-      <h2 className='font-bold text-2xl'>Registration Fee</h2>
-        <ul className="pt-4 space-y-3">
+    <div className='registration-bg text-blue-900 pt-5 pl-4'>
+      <h2 className='font-bold text-4xl'>Registration Fee</h2>
+        <ul className="pt-4 space-y-3 text-2xl">
           <li>
             Students: ₦<b>20,000</b>
           </li>

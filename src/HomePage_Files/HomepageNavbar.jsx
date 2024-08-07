@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import Logo from "../components/images/logo.png"
+import Logo from "../components/images/logo2.png"
 import { CgMenu } from 'react-icons/cg';
 
 function HomepageNavbar() {
@@ -35,23 +35,22 @@ function HomepageNavbar() {
     ];
 
     return (
-        <header className="bg-gray-800 text-white pt-4 pb-2 select-none">
+        <header className="bg-gray-900 text-white pt-4 pb-2 select-none">
             <nav className="flex justify-between items-center w-[92%] mx-auto">
                 <div>
                     <div className="inline-block mr-2 cursor-pointer" onClick={() => navigate("/")}>
-                        <img src={Logo} width="40" height="40" className="inline-block transform -translate-y-2" alt="Logo" />
+                        <img src={Logo} className="h-26 w-20 inline-block transform -translate-y-2" alt="Logo" />
                     </div>
                     <span
-                      
                         className="text-xl sm:text-3xl font-semibold inline-block mb-2">
-                        Lead City
+                        FASCON 2024
                     </span>
                 </div>
 
-                <div className={`nav-links bg-gray-800 duration-500 md:static absolute md:min-h-fit min-h-[45vh] left-0 ${isMenuOpen ? 'top-[10%]' : 'top-[-100%]'} md:w-auto w-full flex items-center px-5`}>
+                <div className={`nav-links black duration-500 md:static absolute md:min-h-fit min-h-[45vh] left-0 ${isMenuOpen ? 'top-[10%]' : 'top-[-100%]'} md:w-auto w-full flex items-center px-5`}>
                     <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                         {NavMenus.map((Menu, index) => (
-                            <li key={index}  className="cursor-pointer text-[0.8rem] hover:text-blue-600"  onClick={() => navigate(Menu.path)}>
+                            <li key={index}  className="cursor-pointer text-[1rem] hover:text-blue-600"  onClick={() => navigate(Menu.path)}>
                                 <span>{Menu.title}</span>
                             </li>
                         ))}
