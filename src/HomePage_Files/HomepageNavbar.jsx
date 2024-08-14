@@ -34,7 +34,7 @@ function HomepageNavbar() {
         // { title: "HOME", path: "/" },
         { title: "ABOUT", path: "/about", subMenu: [
             { title: "Orginizers", path: "/about/organizers" },
-            { title: "Program Committee", path: "/about/day2" }
+            { title: "Program", path: "/about/program" }
         ]},
         { title: "ATTENDING", path: "/registration", subMenu: [
             { title: "Registration", path: "/about/day1" },
