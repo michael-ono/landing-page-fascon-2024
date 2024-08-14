@@ -13,6 +13,7 @@ import Organizers from "./components/Organizers";
 import Registration from "./components/Registration";
 import Attending from "./components/Attending";
 import Updates from "./components/Updates";
+import Contact from "./components/Contact";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
       <Route path="/registration" element={<Registration />} />
       <Route path="/attending" element={<Attending />} />
       <Route path="/updates" element={<Updates />} />
+      <Route path="/contact" element={<Contact/>} />
       <Route path="/organizers" element={<Organizers />} />
    
       {/* User */} 

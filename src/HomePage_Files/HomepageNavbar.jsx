@@ -42,7 +42,7 @@ function HomepageNavbar() {
         ] },
         { title: "CALL", path: "/attending" },
         { title: "PROGRAM", path: "/updates" },
-        { title: "CONTACT US", path: "/organizers" },
+        { title: "CONTACT US", path: "/contact" },
         { title: "FASCON 2024", path: "/" },
     ];
 
