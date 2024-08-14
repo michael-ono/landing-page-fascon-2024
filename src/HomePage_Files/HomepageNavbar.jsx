@@ -33,7 +33,7 @@ function HomepageNavbar() {
     const NavMenus = [
         // { title: "HOME", path: "/" },
         { title: "ABOUT", path: "/about", subMenu: [
-            { title: "Orginizers", path: "/about/organizers" },
+            { title: "Organizers", path: "/about/organizers" },
             { title: "Program", path: "/about/program" }
         ]},
         { title: "ATTENDING", path: "/registration", subMenu: [

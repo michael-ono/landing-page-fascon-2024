@@ -21,7 +21,7 @@ const Organizers = () => {
             {/* Orginizer 1 */}
             <div className='pl-6'> 
               <h1 className='text-3xl font-semibold pl-6'>
-                Local Orginizing Committee (LOC)
+                Local Organizing Committee (LOC)
               </h1>
               <div className="flex flex-wrap px-4 gap-x-4">
                 {/* placeholder-1 */}
