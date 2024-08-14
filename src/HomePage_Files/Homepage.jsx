@@ -76,18 +76,14 @@ const Homepage = () => {
                     <div className="w-full md:w-1/2 pl-14 space-y-8 pt-8 pb-7">
                         <h1 className="text-5xl pr-3 leading-tight font-semibold tracking-normal break-words">FASCON 2024: The 4th International Conference of the Faculty of Natural and Applied Sciences</h1>
 
-                        <p className="text-deep-orange-500 text-3xl font-extrabold">29 -31 October, 2024</p>
+                        <p className="text-deep-orange-500 text-3xl font-extrabold">29 - 30 October, 2024</p>
                         <p className="text-deep-orange-500 text-3xl font-extrabold">Ibadan, Nigeria</p>
                         <p className="text-2xl font-semibold pr-12">FASCON 2024 is being organized by the Faculty of Natural and Applied Sciences, Lead City University</p>
-                        <div className="flex flex-row space-x-40 items-center"> 
-                            <button className="rounded-3xl text-white bg-blue-500 hover:bg-blue-500 focus:ring-200 font-medium text-md px-12 h-20" onClick={() => navigateSignup(registerPath)}>Register</button>
-                            <div className="w-full md:w-1/2">
-                                <img src={logo} alt="Image description"/>
-                            </div>
-                        </div>
+                        <button className="rounded-3xl text-white text-3xl bg-blue-500 hover:bg-blue-500 focus:ring-200 font-medium text-md px-12 h-20" onClick={() => navigateSignup(registerPath)}>Register</button>
+                         
                     </div>
 
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full md:w-1/2 py-12">
                       <img src={heroBg} alt="Image description"/> 
                     </div>  
                 </div>
