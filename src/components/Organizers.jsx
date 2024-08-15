@@ -5,7 +5,7 @@ import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
 const Organizers = () => {
   return (
 
-    <div>
+    <div className='bg-[#ecf1f7]'>
       <HomepageNavbar />
 
       <div className=' mt-6'>
