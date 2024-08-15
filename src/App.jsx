@@ -14,6 +14,7 @@ import Registration from "./components/Registration";
 import Attending from "./components/Attending";
 import Updates from "./components/Updates";
 import Contact from "./components/Contact";
+import Events from "./components/Events";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       <Route path="/updates" element={<Updates />} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/organizers" element={<Organizers />} />
+      <Route path="/schedule" element={<Events/>} />
    
       {/* User */} 
       {/* <Route element={<PrivateRouteUser isLogged={userLogged} />}> */}

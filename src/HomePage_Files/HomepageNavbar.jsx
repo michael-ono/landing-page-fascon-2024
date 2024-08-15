@@ -37,10 +37,9 @@ function HomepageNavbar() {
             { title: "Organizers", path: "/about/organizers" }
         ]},
         { title: "ATTENDING", path: "/registration", subMenu: [
-            { title: "Registration", path: "/about/day1" },
-            { title: "Accommodation", path: "/about/day2" }
+            { title: "Accommodation", path: "/accommodation" }
         ] },
-        { title: "CALL", path: "/attending" },
+        { title: "SCHEDULE", path: "/schedule" },
         // { title: "PROGRAM", path: "/updates" },
         { title: "REGISTRATION", path: "/register" },
         { title: "CONTACT US", path: "/contact" },
