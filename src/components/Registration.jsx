@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
 
 const Registration = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  const handleOpenModal = () => {
+    setShowModal(true);   
+  };
+
   return (
     <div>
       <HomepageNavbar />
@@ -60,9 +70,28 @@ const Registration = () => {
                     <td class="py-4 px-6 font-bold text-[1.1rem] text-center">No</td>
                 </tr>
                 </tbody>
-            </table>
+        </table>
 
-            <button className='text-white mt-6 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center'>Make Payment</button>
+          <button className='text-white mt-6 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center' onClick={handleOpenModal}>Make Payment</button>
+          {showModal && (
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-opacity-50 bg-gray-900">
+    <div className="bg-white rounded-lg p-8">
+      <h2 className="text-2xl font-bold mb-4">Payment Details</h2>
+      <div className='text-black'>
+        <p className='text-black text-xl'><strong className='text-black text-lg'>Account Name:</strong> FASCON Lead City University</p>
+        <p className='text-black text-xl'><strong className='text-black text-lg'>Account Number:</strong> 1014715731</p>
+        <p className='text-black text-xl'><strong className='text-black text-lg'>Bank Name:</strong> Zenith Bank</p>
+      </div>
+      <div className="flex justify-end mt-4 gap-12">
+        {/* <button onClick={handleCloseModal}>Close</button> */}
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-4"  onClick={handleCloseModal}>
+          I have made Payment
+        </button>
+      </div>
+    </div>
+  </div>
+          )}
+
       </div> 
     </div> 
   )
