@@ -5,14 +5,14 @@ import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
 const Organizers = () => {
   return (
 
-    <div className='bg-[#ecf1f7]'>
+    <div className='bg-[#f3f5f8]'>
       <HomepageNavbar />
 
       <div className=' mt-6'>
         <div className="flex flex-col">
           <div className="text-center">
-            <h2 className="font-semibold text-4xl">Organizers</h2>
-            <p className="max-w-md mx-auto mt-2 text-gray-700">
+            <h2 className="font-bold text-5xl">Organizers</h2>
+            <p className="max-w-md mx-auto mt-2 text-lg text-gray-900">
               Here are list of the Organizing parties involved
             </p>
           </div>
