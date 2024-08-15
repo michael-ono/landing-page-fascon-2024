@@ -41,7 +41,8 @@ function HomepageNavbar() {
             { title: "Accommodation", path: "/about/day2" }
         ] },
         { title: "CALL", path: "/attending" },
-        { title: "PROGRAM", path: "/updates" },
+        // { title: "PROGRAM", path: "/updates" },
+        { title: "REGISTRATION", path: "/register" },
         { title: "CONTACT US", path: "/contact" },
         { title: "FASCON 2024", path: "/" },
     ];
