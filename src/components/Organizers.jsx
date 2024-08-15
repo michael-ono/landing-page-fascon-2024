@@ -12,7 +12,7 @@ const Organizers = () => {
         <div className="flex flex-col">
           <div className="text-center">
             <h2 className="font-bold text-5xl">Organizers</h2>
-            <p className="max-w-md mx-auto mt-2 text-lg text-gray-900">
+            <p className="max-w-md mx-auto mt-2 text-xl text-gray-900">
               Here are list of the Organizing parties involved
             </p>
           </div>

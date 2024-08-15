@@ -36,9 +36,9 @@ function HomepageNavbar() {
             { title: "Program", path: "/about/program" },
             { title: "Organizers", path: "/about/organizers" }
         ]},
-        { title: "ATTENDING", path: "/registration", subMenu: [
-            { title: "Accommodation", path: "/accommodation" }
-        ] },
+        { title: "ATTENDING", path: "/attending",
+            // { title: "Accommodation", path: "/accommodation" }
+        },
         { title: "SCHEDULE", path: "/schedule" },
         // { title: "PROGRAM", path: "/updates" },
         { title: "REGISTRATION", path: "/register" },

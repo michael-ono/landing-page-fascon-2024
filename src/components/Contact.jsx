@@ -23,7 +23,7 @@ const Contact = () => {
           </div> */}
           <div className="mx-auto pt-10">
             <div className="max-w-md mx-auto  bg-[#e7e2e2] text-black rounded-md shadow-sm">
-              <div className="text-center pt-2">
+              <div className="text-center  text-blue-900 pt-2">
                 <h1 className="my-3 text-[2.8rem] font-semibold">
                   Contact Us
                 </h1>
