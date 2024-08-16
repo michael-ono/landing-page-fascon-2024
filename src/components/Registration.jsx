@@ -20,7 +20,7 @@ const Registration = () => {
       <Toaster />
       <HomepageNavbar />
       <div className="container mx-auto p-4 mt-6">
-        <h1 className="text-5xl font-bold mb-4">Registration</h1>
+        <h1 className="text-6xl font-bold mb-4 text-blue-900">Registration</h1>
         <p className="text-xl mb-4">Registration for FASCON 2024 is now open!!</p>
         <h3 className="text-xl font-bold mb-4">Points to note</h3>
         <ul className="list-disc pl-4 mb-4">

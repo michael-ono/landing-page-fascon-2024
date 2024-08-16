@@ -12,8 +12,8 @@ const Organizers = () => {
       <div className=' mt-6'>
         <div className="flex flex-col">
           <div className="text-center">
-            <h2 className="font-bold text-5xl">Organizers</h2>
-            <p className="max-w-md mx-auto mt-2 text-xl text-gray-900">
+            <h2 className="font-bold text-5xl text-blue-900">Organizers</h2>
+            <p className="max-w-md mx-auto mt-2 text-xl text-grey-700">
               Here are list of the Organizing parties involved
             </p>
           </div>
@@ -21,7 +21,7 @@ const Organizers = () => {
           <div className='mt-14'>
             {/* Orginizer 1 */}
             <div className='pl-6'> 
-              <h1 className='text-3xl font-semibold pl-6'>
+              <h1 className='text-3xl font-semibold pl-6 text-blue-900'>
                 Local Organizing Committee (LOC)
               </h1>
               <div className="flex flex-wrap px-4 gap-x-4">
@@ -80,7 +80,7 @@ const Organizers = () => {
             </div>
             {/* ORGINIZER 2 */}
             <div className='pl-6'> 
-              <h1 className='text-3xl font-semibold pl-6'>
+              <h1 className='text-3xl font-semibold pl-6 text-blue-900'>
                   Fund-raising Committee
               </h1>
               <div className="flex flex-wrap px-4 gap-x-4">
@@ -109,7 +109,7 @@ const Organizers = () => {
             </div>
             {/* ORGINIZER 3 */}
             <div className='pl-6'> 
-              <h1 className='text-3xl font-semibold pl-6'>
+              <h1 className='text-3xl font-semibold pl-6 text-blue-900'>
                 Scientific / Technical Programme Committee
               </h1>
               <div className="flex flex-wrap px-4 gap-x-4">
@@ -228,7 +228,7 @@ const Organizers = () => {
             </div>
             {/* ORGINIZER 4 */}
             <div className='pl-6'> 
-              <h1 className='text-3xl font-semibold pl-6'>
+              <h1 className='text-3xl font-semibold pl-6 text-blue-900'>
                 Multimedia and Tech Committee
               </h1>
               <div className="flex flex-wrap px-4 gap-x-4">

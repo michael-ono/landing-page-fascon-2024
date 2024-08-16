@@ -12,8 +12,8 @@ export default function About() {
             <HomepageNavbar />
             <div className='flex flex-col mx-auto mt-4 items-center justify-center gap-y-4'>
                 <img src={aboutLogo} className='w-28 h-24' alt="Image description"/> 
-                <h1 className='text-6xl font-semibold p-0 tracking-wide leading-10'>Lead City University Ibadan</h1>
-                <h2 className='text-3xl font-bold'>Faculty of Natural and Applied Sciences</h2>
+                <h1 className='text-6xl text-blue-900 font-semibold p-0 tracking-wide leading-10'>Lead City University Ibadan</h1>
+                <h2 className='text-3xl text-blue-900 font-bold'>Faculty of Natural and Applied Sciences</h2>
                 <img src={aboutConfence} className='w-[48rem] h-[15rem]' alt="Image description"/> 
                 <div className='flex gap-6 justify-center items-center mt-12'>
                     <h1 className='text-deep-orange-500 text-2xl font-extrabold'>Theme:</h1>
