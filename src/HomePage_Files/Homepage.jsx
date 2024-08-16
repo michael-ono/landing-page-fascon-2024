@@ -1,6 +1,5 @@
 import axios from "axios";
 import heroBg from "../assets/heroBg.png";
-import "../App.css";
 import logo from "../components/images/logo.png"
 import Blog from "../components/Blog";
 
