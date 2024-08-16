@@ -45,6 +45,36 @@ const Organizers = () => {
                   />
                   <h1 className=''>Dr W. Sakpere (LOC Chair), Computer Science</h1>
                 </div>
+                {/* placeholder-3*/}
+                <div className="text-black flex flex-col h-60 w-40 gap-y-5 justify-center items-center text-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 1 Logo"
+                    width="70"
+                    height="70"
+                  />
+                  <h1 className=''>Dr A.E. Enochoghene, Biological Sciences</h1>
+                </div>
+                {/* placeholder-4 */}
+                <div className="text-black flex flex-col h-60 w-40 gap-y-5 justify-center items-center text-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 1 Logo"
+                    width="70"
+                    height="70"
+                  />
+                  <h1 className=''>Dr R.F. Oloruntola, Physics/Geology</h1>
+                </div>
+                {/* placeholder-5 */}
+                <div className="text-black flex flex-col h-60 w-40 gap-y-5 justify-center items-center text-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 1 Logo"
+                    width="70"
+                    height="70"
+                  />
+                  <h1 className=''>Ms I.M. Fatoki, Computer Science</h1>
+                </div>
 
               </div>
             </div>
@@ -80,7 +110,7 @@ const Organizers = () => {
             {/* ORGINIZER 3 */}
             <div className='pl-6'> 
               <h1 className='text-3xl font-semibold pl-6'>
-                Scientific/Technical Programme Committee
+                Scientific / Technical Programme Committee
               </h1>
               <div className="flex flex-wrap px-4 gap-x-4">
                 {/* placeholder-1 */}
@@ -192,6 +222,65 @@ const Organizers = () => {
                     height="70"
                   />
                    <h1 className='w-full'>Ex-officio Members: All Professors of FONAS (Professors Fatoki, Akinola, Idowu, Sunmonu)</h1>
+                </div>
+
+              </div>
+            </div>
+            {/* ORGINIZER 4 */}
+            <div className='pl-6'> 
+              <h1 className='text-3xl font-semibold pl-6'>
+                Multimedia and Tech Committee
+              </h1>
+              <div className="flex flex-wrap px-4 gap-x-4">
+                {/* placeholder-1 */}
+                <div className="text-black flex flex-col h-60 w-40 gap-y-5 justify-center items-center text-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 1 Logo"
+                    width="70"
+                    height="70"
+                  />
+                  <h1 className=''>Dr F.M. Adedeji (Chair), Computer Science</h1>
+                </div>
+                {/* placeholder-2 */}
+                <div className="text-black flex flex-col h-60 w-40 gap-y-5 justify-center items-center text-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 1 Logo"
+                    width="70"
+                    height="70"
+                  />
+                  <h1 className=''>Dr M.A. Sofowora, Computer Science</h1>
+                </div>
+                {/* placeholder-3*/}
+                <div className="text-black flex flex-col h-60 w-40 gap-y-5 justify-center items-center text-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 1 Logo"
+                    width="70"
+                    height="70"
+                  />
+                  <h1 className=''>Dr O.O. Daramola, Physics/Geology</h1>
+                </div>
+                {/* placeholder-4 */}
+                <div className="text-black flex flex-col h-60 w-40 gap-y-5 justify-center items-center text-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 1 Logo"
+                    width="70"
+                    height="70"
+                  />
+                  <h1 className=''>Mr A.J. Abiodun, Physics/Geology</h1>
+                </div>
+                {/* placeholder-5 */}
+                <div className="text-black flex flex-col h-60 w-40 gap-y-5 justify-center items-center text-center">
+                  <img
+                    src={sponsorPlaceholder}
+                    alt="Organizers 1 Logo"
+                    width="70"
+                    height="70"
+                  />
+                  <h1 className=''>Mr E.A. Adediran, Computer Science</h1>
                 </div>
 
               </div>

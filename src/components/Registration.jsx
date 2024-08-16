@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import toast, { Toaster } from "react-hot-toast";
 import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
 
 const Registration = () => {
@@ -6,6 +7,7 @@ const Registration = () => {
 
   const handleCloseModal = () => {
     setShowModal(false);
+    toast.success("Thanks for the purchase. Enjoy");
   };
 
   const handleOpenModal = () => {
@@ -14,6 +16,7 @@ const Registration = () => {
 
   return (
     <div className='bg-[#ecf1f7]'>
+      <Toaster />
       <HomepageNavbar />
       <div className="container mx-auto p-4 mt-6">
         <h1 className="text-5xl font-bold mb-4">Registration</h1>
