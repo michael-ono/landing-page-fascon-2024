@@ -24,10 +24,10 @@ const Contact = () => {
           <div className="mx-auto pt-10 h-[88vh]">
             <div className="max-w-md mx-auto  bg-[#ecf1f7] text-black rounded-md shadow-sm">
               <div className="text-center pt-2">
-                <h1 className="my-3 text-[2.8rem] text-blue-900 font-semibold">
+                <h1 className="my-3 text-[2.8rem] font-semibold">
                   Contact Us
                 </h1>
-                <p className="text-[1.4rem] text-blue-900">
+                <p className="text-[1.4rem]">
                   Fill in this form to send me a message.
                 </p>
               </div>
