@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import toast, { Toaster } from "react-hot-toast";
 import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
+import Footer from '../Navbar_Files/Footer';
 
 const Registration = () => {
   const [showModal, setShowModal] = useState(false);
@@ -96,6 +97,7 @@ const Registration = () => {
           )}
 
       </div> 
+      <Footer />
     </div> 
   )
 };
