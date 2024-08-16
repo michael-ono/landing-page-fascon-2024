@@ -73,6 +73,7 @@ const Attending = () => {
       </div>
 
     </div>
+    <Footer />
   </>
   );
 };
