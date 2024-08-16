@@ -4,10 +4,11 @@ import aboutConfence from "./images/about-confrence.jpeg";
 import aboutLogo from "./images/logo4.png";
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import "../App.css";
+import Footer from '../Navbar_Files/Footer';
 
 export default function About() {
     return (
-        <>
+        <div className='bg-[#ecf1f7]'>
             <HomepageNavbar />
             <div className='flex flex-col mx-auto mt-4 items-center justify-center gap-y-4'>
                 <img src={aboutLogo} className='w-28 h-24' alt="Image description"/> 
@@ -27,6 +28,7 @@ export default function About() {
                     <h1 className='text-2xl font-bold'>International Confrence Centre <br /> Lead City, Ibadan </h1>
                 </div>
             </div>
-        </>
+            <Footer />
+        </div>
     )
 }

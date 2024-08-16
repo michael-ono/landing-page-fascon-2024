@@ -1,6 +1,8 @@
 import React from 'react';
 import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
 import atttendingImg from "../assets/attending-bg.jpeg";
+import Footer from '../Navbar_Files/Footer';
+// import Footer2 from '../Navbar_Files/Footer2';
 const Attending = () => {
 
   return (

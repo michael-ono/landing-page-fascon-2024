@@ -7,10 +7,10 @@ import HomepageNavbar from "../HomePage_Files/HomepageNavbar";
 const Contact = () => {
 
   return (
-    <div className="bg-[#e7e2e2]">
+    <div className="bg-[#ecf1f7]">
       <Toaster />
       <HomepageNavbar />
-      <div className="md:flex justify-between bg-[#e7e2e2] overflow-hidden text-black">
+      <div className="md:flex justify-between bg-[#ecf1f7] overflow-hidden text-black">
         <div className="md:w-3/5 md:mb-0 px-3">
           {/* <div className="">
             <h2 className="text-[2rem] md:text-[2.2rem] lg:text-[2.5rem] text-black font-bold">
@@ -22,8 +22,8 @@ const Contact = () => {
             </p>
           </div> */}
           <div className="mx-auto pt-10 h-[88vh]">
-            <div className="max-w-md mx-auto  bg-[#e7e2e2] text-black rounded-md shadow-sm">
-              <div className="text-center  text-blue-900 pt-2">
+            <div className="max-w-md mx-auto  bg-[#ecf1f7] text-black rounded-md shadow-sm">
+              <div className="text-center pt-2">
                 <h1 className="my-3 text-[2.8rem] font-semibold">
                   Contact Us
                 </h1>

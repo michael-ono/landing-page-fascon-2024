@@ -1,11 +1,12 @@
 import React from 'react';
 import sponsorPlaceholder from "./images/blank-user.jpeg";
 import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
+import Footer from '../Navbar_Files/Footer';
 
 const Organizers = () => {
   return (
 
-    <div className='bg-[#f3f5f8]'>
+    <div className='bg-[#ecf1f7]'>
       <HomepageNavbar />
 
       <div className=' mt-6'>
@@ -199,6 +200,8 @@ const Organizers = () => {
         </div>
 
       </div>
+
+      <Footer />
     </div>
   );
 };
