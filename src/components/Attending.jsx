@@ -12,8 +12,8 @@ const Attending = () => {
     <div className='w-full bg-[#ecf1f7]'>
       
       <div>
-        <div className='grid grid-cols-3'>
-          <div className="container pl-20 pt-8 grid grid-cols-1 md:grid-cols-2 gap-8 col-span-2">
+        <div className='flex pr-44'>
+          <div className="container pl-20 pt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h2 className="text-3xl text-pink-600 font-extrabold mb-2">Keynote Speaker</h2>
               <div className="flex flex-col text-lg gap-1">
@@ -47,8 +47,9 @@ const Attending = () => {
               </div>
             </div>
           </div>
-          <div>
-            <img src={logo} className="w-[300px] h-[300px]" alt="Image description"/>
+          <div className='flex flex-col justify-center items-center text-center'>
+            <h1 className='text-3xl font-bold text-red-400 pb-5'>Abstract admission is now open!</h1>
+            <p className='text-2xl'>Submit an abstract by 30" August 2024 to fascon@lcu.edu.ng with an email Subject containing the author's name.</p>
           </div>
         </div>
         
@@ -73,9 +74,12 @@ const Attending = () => {
               </li>
             </ul>
           </div>
-          {/* <div className="flex flex-col md:ml-10 ml-20 pr-4 text-lg gap-1 w-full">
-            <img src={atttendingImg} className='w-full' alt="Speaker Image" />
-          </div> */}
+          <div className='ml-44'> 
+            <img src={logo} className="w-[340px] h-[300px]" alt="Image description"/>
+          </div>
+
+     
+
         </div>
       </div>
 
