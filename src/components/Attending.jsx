@@ -10,7 +10,7 @@ const Attending = () => {
     {/* SPEAKERS */}
     <div className='w-full bg-[#ecf1f7]'>
       
-      <div className="container mx-auto pt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="container pl-20 pt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h2 className="text-3xl text-pink-600 font-extrabold mb-2">Keynote Speaker</h2>
           <div className="flex flex-col text-lg gap-1">
