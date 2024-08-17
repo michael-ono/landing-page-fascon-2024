@@ -7,7 +7,6 @@ const Attending = () => {
 
   return (
     <>
-    <HomepageNavbar />
     {/* SPEAKERS */}
     <div className='w-full bg-[#ecf1f7]'>
       
@@ -73,7 +72,6 @@ const Attending = () => {
       </div>
 
     </div>
-    <Footer />
   </>
   );
 };

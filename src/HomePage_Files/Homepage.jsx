@@ -13,6 +13,7 @@ import Footer from "../Navbar_Files/Footer";
 import ImageSlider from "./ImageSilder";
 import SlickSlider from "../components/SlickSlider";
 import Sponsors from "../components/Sponsors";
+import Attending from "../components/Attending";
 
 const Homepage = () => {
 
@@ -69,23 +70,24 @@ const Homepage = () => {
     return (
         <>
             <HomepageNavbar />
-            <div className="hero-bg pb-16 select-none text-blue-900">
+            <div className="pb-12 select-none text-blue-900 bg-[#ecf1f7]">
 
-                <div className="flex flex-wrap p-5 ">  
+                <div className="flex flex-wrap p-5">  
                     <div className="w-full md:w-1/2 pl-14 space-y-8 pt-24 pb-7">
                         <h1 className="text-5xl pr-3 leading-tight font-semibold tracking-normal break-words">FASCON 2024: The 4th International Conference of the Faculty of Natural and Applied Sciences</h1>
 
-                        <p className="text-deep-orange-500 text-3xl font-extrabold">29 - 30 October, 2024</p>
+                        <p className="text-deep-orange-500 text-3xl font-extrabold">28 - 30 October, 2024</p>
                         <p className="text-deep-orange-500 text-3xl font-extrabold">Ibadan, Nigeria</p>
                         <p className="text-2xl font-semibold pr-12">FASCON 2024 is being organized by the Faculty of Natural and Applied Sciences, Lead City University</p>
                         <button className="rounded-3xl text-white text-3xl bg-blue-500 hover:bg-blue-700  focus:ring-200 font-medium text-md px-12 h-20" onClick={() => navigateSignup(registerPath)}>Register</button>
-                         
                     </div>
 
                     <div className="w-full md:w-1/2 py-12">
                       <img src={heroBg} alt="Image description"/> 
                     </div>  
                 </div>
+
+                <Attending />
 
 {/* 
                 <div className="bg-gray-300 text-4xl px-5 py-4 pl-[5rem] font-semibold">
@@ -94,16 +96,12 @@ const Homepage = () => {
                     </div>
                 </div> */}
 
-                <div className="px-5 pb-5">
-                    <Sponsors />
-                </div>
 
                 {/* <div className="bg-gray-300 text-4xl px-5 py-4 pl-[5rem] font-semibold">
                     <div className="container mx-auto">
                         SPONSORS
                     </div>
                 </div> */}
-                <Blog />
 
                 {/* <div className="p-5 pl-8 py-6 text-[#ffff] text-[1.2rem]" style={{ backgroundImage: `url(${tutorBg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                     <p>Are you passionate about teaching and sharing your knowledge with eager learners?</p>
