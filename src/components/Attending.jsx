@@ -1,10 +1,14 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
 import atttendingImg from "../assets/attending-bg.jpeg";
 import Footer from '../Navbar_Files/Footer';
 import logo from "../components/images/logo3.png"
+import { FaArrowRight } from 'react-icons/fa';
 // import Footer2 from '../Navbar_Files/Footer2';
 const Attending = () => {
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -68,14 +72,15 @@ const Attending = () => {
               </p>
             </div>
 
-            {/* Track5*/}
+            {/* Track4 */}
             <div className="">
-              <h1 className="text-2xl text-blue-800 font-extrabold mb-2">Track 5: Ethics in Al Research</h1>
+              <h1 className="text-2xl text-blue-800 font-extrabold mb-2">Track 4: Emerging Technologies for Inclusive and ustainable Education</h1>
               <p className="text text-grey-800 font-medium max-w-2xl">
-              Bias and Fairness; Transparency and Accountability; Privacy and Security Concerns; Responsible Al; Ethical Al; Al for Social Good; Security and Civil Liberties; Equity and Inclusivity;
-              Legal and Policy Frameworks for Ethical Al Development; Al and Deepfakes; Environmental Ethics and Al.
+                Adaptive Learning Systems; Intelligent Tutoring; Personalised Learning Pathways; Al-enhanced Virtual Learning Environments and Remote Education; Al for Efficient Curriculum Design 
+                and Development; Al-driven Predictive Analytics; Al for Automated and Fair Evaluation; Collaborative Learning and Al; Al for Educational Game Design.
               </p>
             </div>
+
 
             {/* Track2 */}
             <div className="">
@@ -86,12 +91,12 @@ const Attending = () => {
               </p>
             </div>
 
-            {/* Track4 */}
+            {/* Track5*/}
             <div className="">
-              <h1 className="text-2xl text-blue-800 font-extrabold mb-2">Track 4: Emerging Technologies for Inclusive and ustainable Education</h1>
+              <h1 className="text-2xl text-blue-800 font-extrabold mb-2">Track 5: Ethics in Al Research</h1>
               <p className="text text-grey-800 font-medium max-w-2xl">
-                Adaptive Learning Systems; Intelligent Tutoring; Personalised Learning Pathways; Al-enhanced Virtual Learning Environments and Remote Education; Al for Efficient Curriculum Design 
-                and Development; Al-driven Predictive Analytics; Al for Automated and Fair Evaluation; Collaborative Learning and Al; Al for Educational Game Design.
+              Bias and Fairness; Transparency and Accountability; Privacy and Security Concerns; Responsible Al; Ethical Al; Al for Social Good; Security and Civil Liberties; Equity and Inclusivity;
+              Legal and Policy Frameworks for Ethical Al Development; Al and Deepfakes; Environmental Ethics and Al.
               </p>
             </div>
 
@@ -103,6 +108,10 @@ const Attending = () => {
                 Computing; Real-Time Decision-Making in Autonomous Systems; Cyber-Physical Systems; Simulation and Modelling; Cognitive Computing;Cloud and Edge Computing; Distributed Computing
                 Systems; Quantum Computing Technologies; Astrophysics; Computational Fluid Dynamics Metrology; Geosciences; Optics and Photonics.
               </p>
+            </div>
+
+            <div className='w-5/6'>
+              <button className="flex flex-col items-center justify-center h-24 w-3/6 md:w-4/6 rounded-3xl text-black text-3xl border-indigo-200 border-4 hover:bg-indigo-200 focus:ring-200 font-bold text-md px-12 " onClick={() => navigate("/schedule")}>CHECK CONFRENCE FEES <FaArrowRight /></button>
             </div>
             
               
@@ -136,8 +145,6 @@ const Attending = () => {
           <div className='ml-44'> 
             <img src={logo} className="w-[340px] h-[300px]" alt="Image description"/>
           </div>
-
-     
 
         </div>
 
