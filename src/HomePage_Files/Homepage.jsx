@@ -105,7 +105,7 @@ const Homepage = () => {
                         <p className="text-pink-600 text-3xl font-extrabold">28 - 30 October, 2024</p>
                         <p className="text-pink-600 text-3xl font-extrabold">Ibadan, Nigeria</p>
                         <p className="text-2xl font-semibold pr-12">FASCON 2024 is being organized by the Faculty of Natural and Applied Sciences, Lead City University</p>
-                        <button className="rounded-3xl text-white text-3xl bg-blue-500 hover:bg-blue-700  focus:ring-200 font-medium text-md px-12 h-16" onClick={() => navigateSignup(registerPath)}>Register</button>
+                        <button className="rounded-3xl text-white text-3xl bg-blue-500 hover:bg-blue-700 focus:ring-200 font-medium text-md px-12 h-16" onClick={() => navigateSignup(registerPath)}>Register</button>
                     </div>
 
                     <div className="w-full md:w-1/2 py-12 op">
