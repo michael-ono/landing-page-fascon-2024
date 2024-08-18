@@ -1,7 +1,8 @@
 import axios from "axios";
 import heroBg from "../assets/heroBg.png";
-import logo from "../components/images/logo.png"
-import Blog from "../components/Blog";
+// import logo from "../components/images/logo.png"
+// import Blog from "../components/Blog";
+import { FaArrowUp } from "react-icons/fa";
 
 import { useState } from "react";
 import { useEffect } from "react";
@@ -10,12 +11,37 @@ import { useNavigate } from "react-router-dom";
 import HomepageNavbar from "./HomepageNavbar";
 import Footer from "../Navbar_Files/Footer";
 
-import ImageSlider from "./ImageSilder";
-import SlickSlider from "../components/SlickSlider";
-import Sponsors from "../components/Sponsors";
+// import ImageSlider from "./ImageSilder";
+// import SlickSlider from "../components/SlickSlider";
+// import Sponsors from "../components/Sponsors";
 import Attending from "../components/Attending";
 
 const Homepage = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleVisibility = () => {
+        if (window.pageYOffset > 300) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      };
+    
+      const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      };
+    
+      useEffect(() => {
+        window.addEventListener('scroll', toggleVisibility);
+        return () => {
+          window.removeEventListener('scroll', toggleVisibility);
+        };
+      }, []);
+
+
 
     //Set the Courses List
     const [courseList, setCourses] = useState({ 
@@ -70,26 +96,26 @@ const Homepage = () => {
     return (
         <>
             <HomepageNavbar />
-            <div className="pb-12 select-none text-blue-900 bg-[#ecf1f7]">
+            <div className="pb-12 hero-bg select-none bg-[#ecf1f7]">
 
                 <div className="flex flex-wrap p-5">  
                     <div className="w-full md:w-1/2 pl-14 space-y-8 pt-24 pb-7">
                         <h1 className="text-5xl pr-3 leading-tight font-semibold tracking-normal break-words">FASCON 2024: The 4th International Conference of the Faculty of Natural and Applied Sciences</h1>
 
-                        <p className="text-deep-orange-500 text-3xl font-extrabold">28 - 30 October, 2024</p>
-                        <p className="text-deep-orange-500 text-3xl font-extrabold">Ibadan, Nigeria</p>
+                        <p className="text-pink-600 text-3xl font-extrabold">28 - 30 October, 2024</p>
+                        <p className="text-pink-600 text-3xl font-extrabold">Ibadan, Nigeria</p>
                         <p className="text-2xl font-semibold pr-12">FASCON 2024 is being organized by the Faculty of Natural and Applied Sciences, Lead City University</p>
                         <button className="rounded-3xl text-white text-3xl bg-blue-500 hover:bg-blue-700  focus:ring-200 font-medium text-md px-12 h-16" onClick={() => navigateSignup(registerPath)}>Register</button>
                     </div>
 
-                    <div className="w-full md:w-1/2 py-12">
+                    <div className="w-full md:w-1/2 py-12 op">
                       <img src={heroBg} alt="Image description"/> 
                     </div>  
                 </div>
 
                 <Attending />
 
-{/* 
+                {/* 
                 <div className="bg-gray-300 text-4xl px-5 py-4 pl-[5rem] font-semibold">
                     <div className="container mx-auto text-center text-blue-900">
                         SPONSORS
@@ -117,6 +143,17 @@ const Homepage = () => {
                     </p>
                 </div> */}
 
+                <div className="fixed bottom-0 right-0 mb-4 mr-4">
+                    {isVisible && (
+                        <button
+                          onClick={scrollToTop}
+                          className="bg-blue-500 hover:bg-blue-700 text-white text-2xl font-bold py-3 px-6 rounded-full"
+                        >
+                            <FaArrowUp />
+                        </button>
+                    )}
+                </div>
+            
             </div >
             <Footer />
         </>

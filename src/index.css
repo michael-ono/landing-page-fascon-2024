@@ -13,12 +13,12 @@
 }
 
 .hero-bg {
-    background-color: #ecf1f7;
-    /* height: 100;
+    /* background-color: #ecf1f7; */
+    height: 100;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./assets/homepageBg2.svg"); */
+    background-image: url("./assets/shiny-overlay4.png");
 }
 
 .about-bg {
@@ -37,9 +37,10 @@
     background-image: url("./assets/homepageBg2.svg"); */
 }
 
-/* .attending-bg {
+.attending-bg {
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-} */
+    background-image: url("./assets/attending3-bg.png"); 
+}
