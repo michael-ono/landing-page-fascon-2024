@@ -20,7 +20,7 @@ export default function About() {
                     <h4 className='text-xl font-bold w-1/2'>Emerging Technologies in Scientific Research and Innovation for Sustainable ational Development</h4>
                 </div>
                 <div className='flex gap-6 p-3 justify-center items-center border-2 border-black'>
-                    <h1 className='text-2xl font-bold'>Date: 10th-12th December, 2022</h1> |
+                    <h1 className='text-2xl font-bold'>Date: 28th - 30th October, 2024</h1> |
                     <h1 className='text-2xl font-bold'>Time: 10:00am</h1>
                 </div>
                 <div className="flex gap-6 justify-center items-center">

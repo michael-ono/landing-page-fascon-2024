@@ -1,6 +1,6 @@
 import axios from "axios";
 import heroBg from "../assets/heroBg.png";
-// import logo from "../components/images/logo.png"
+import logo from "../components/images/logo3.png"
 // import Blog from "../components/Blog";
 import { FaArrowUp } from "react-icons/fa";
 
@@ -99,7 +99,11 @@ const Homepage = () => {
             <div className="hero-bg select-none bg-[#ecf1f7]">
 
                 <div className="flex flex-wrap p-5">  
-                    <div className="w-full md:w-1/2 pl-14 space-y-8 pt-24 pb-7">
+                    <div className="w-full md:w-1/2 pl-14 space-y-6 pt-2 pb-7">
+                        <div className='pl-28 lg:pl-72 '> 
+                          <img src={logo} className="w-[80px] h-[80px]" alt="Image description"/>
+                        </div>
+
                         <h1 className="text-5xl pr-3 leading-tight font-semibold tracking-normal break-words">FASCON 2024: The 4th International Conference of the Faculty of Natural and Applied Sciences</h1>
 
                         <p className="text-pink-600 text-3xl font-extrabold">28 - 30 October, 2024</p>

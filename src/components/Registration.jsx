@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import toast, { Toaster } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
 import Footer from '../Navbar_Files/Footer';
 
 const Registration = () => {
   const [showModal, setShowModal] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleCloseModal = () => {
     setShowModal(false);
@@ -29,7 +32,7 @@ const Registration = () => {
         <h3 className="text-xl font-bold mb-4">Points to note</h3>
         <ul className="list-disc pl-4 mb-4">
           <li className="text-md mb-2">
-            Accommodation options while attending the conference can be found <a href="#" className="text-blue-500 hover:text-blue-700">here</a>.
+            Accommodation options while attending the conference can be found <a className="text-blue-500 hover:text-blue-700" onClick={() => navigate('/accomdation')}>here</a>.
           </li>
           <li className="text-md mb-2">
             Late registration will attract a penalty of ₦40,000 per participant.

@@ -37,8 +37,10 @@ function HomepageNavbar() {
             { title: "Organizers", path: "/about/organizers" }
         ]},
         { title: "SCHEDULE", path: "/schedule" },
-        // { title: "PROGRAM", path: "/updates" },
-        { title: "REGISTRATION", path: "/register" },
+        { title: "REGISTRATION", path: "/register/confrence", subMenu: [
+            { title: "Confrence", path: "/register/confrence" },
+            { title: "Accomodation", path: "/register/accomodation" },
+        ]},
         { title: "CONTACT US", path: "/contact" },
         { title: "FASCON 2024", path: "/" },
     ];

@@ -34,29 +34,29 @@ const Events = () => {
 
         <h2 className="text-3xl font-bold mt-8 mb-8">Full At-A-Glance Schedule</h2>
         <h3 className="text-xl font-bold mb-2">Below is the full at-a-glance version of the FASCON 2024 schedule. Session details are provided below.</h3>
-        <table class="w-full text-smtext-left text-gray-800 border-4 border-grey-600">
-            <thead class="text-xs text-black uppercase bg-gray-50 border-b-4">
+        <table className="w-full text-smtext-left text-gray-800 border-4 border-grey-600">
+            <thead className="text-xs text-black uppercase bg-gray-50 border-b-4">
             <tr>
-                <th scope="col" class="py-3 px-6 text-[1.4rem] font-bold">Date</th>
-                <th scope="col" class="py-3 px-6 text-[1.4rem] font-bold">Time</th>
-                <th scope="col" class="py-3 px-6 text-[1.5rem] font-bold">Schedule</th>
+                <th scope="col" className="py-3 px-6 text-[1.4rem] font-bold">Date</th>
+                <th scope="col" className="py-3 px-6 text-[1.4rem] font-bold">Time</th>
+                <th scope="col" className="py-3 px-6 text-[1.5rem] font-bold">Schedule</th>
             </tr>
             </thead>
             <tbody>
-            <tr class="bg-white border-b h-24">
-                <td class="py-4 px-6 font-bold text-[1.1rem] text-start">Monday, 28th October 2024</td>
-                <td class="py-4 px-6 font-bold text-[1.1rem] text-center">Arrival, Registration and Pre-confrence Workshop</td>
-                <td class="py-4 px-6 font-bold text-[1.1rem] text-center">10:00am</td>
+            <tr className="bg-white border-b h-24">
+                <td className="py-4 px-6 font-bold text-[1.1rem] text-start">Monday, 28th October 2024</td>
+                <td className="py-4 px-6 font-bold text-[1.1rem] text-center">Arrival, Registration and Pre-confrence Workshop</td>
+                <td className="py-4 px-6 font-bold text-[1.1rem] text-center">10:00am</td>
             </tr>
-            <tr class="bg-white border-b h-24">
-                <td class="py-4 px-6 font-bold text-[1.1rem] text-start">Tuesday, 29th October 2024</td>
-                <td class="py-4 px-6 font-bold text-[1.1rem] text-center">Opening Ceremony, Keynote and Technical Sessions</td>
-                <td class="py-4 px-6 font-bold text-[1.1rem] text-center">10:00am</td>
+            <tr className="bg-white border-b h-24">
+                <td className="py-4 px-6 font-bold text-[1.1rem] text-start">Tuesday, 29th October 2024</td>
+                <td className="py-4 px-6 font-bold text-[1.1rem] text-center">Opening Ceremony, Keynote and Technical Sessions</td>
+                <td className="py-4 px-6 font-bold text-[1.1rem] text-center">10:00am</td>
             </tr>
-            <tr class="bg-white border-b h-24">
-                <td class="py-4 px-6 font-bold text-[1.1rem] text-start">Wednesday, 30th October 2024</td>
-                <td class="py-4 px-6 font-bold text-[1.1rem] text-center">Plenary Seasson 1 & 2, Technical Session and Closing Ceremony</td>
-                <td class="py-4 px-6 font-bold text-[1.1rem] text-center">10:00am</td>
+            <tr className="bg-white border-b h-24">
+                <td className="py-4 px-6 font-bold text-[1.1rem] text-start">Wednesday, 30th October 2024</td>
+                <td className="py-4 px-6 font-bold text-[1.1rem] text-center">Plenary Seasson 1 & 2, Technical Session and Closing Ceremony</td>
+                <td className="py-4 px-6 font-bold text-[1.1rem] text-center">10:00am</td>
             </tr>
             </tbody>
         </table>

@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
 import atttendingImg from "../assets/attending-bg.jpeg";
 import Footer from '../Navbar_Files/Footer';
-import logo from "../components/images/logo3.png"
 import { FaArrowRight } from 'react-icons/fa';
 // import Footer2 from '../Navbar_Files/Footer2';
 const Attending = () => {
@@ -62,7 +61,7 @@ const Attending = () => {
         {/* CONFRENCE SUBMISSIONS */}
         <div className='attending-bg py-10 my-4 mt-6'>
           <h1 className='bg-blue-600 p-2 rounded-xl w-3/6 mx-auto text-center text-white text-2xl font-semibold'>The conference will accept paper submissions in the following areas and related sub-themes (but not limited to):</h1>
-          <div className='pt-12 pl-20 grid grid-cols-2 gap-3 gap-y-10'>
+          <div className='pt-12 pl-16 grid grid-cols-2 gap-3 gap-y-10'>
             {/* Track1 */}
             <div className="">
               <h1 className="text-2xl text-blue-900 font-extrabold mb-2">Track 1: AI for Sustainable Applications and Development</h1>
@@ -110,20 +109,20 @@ const Attending = () => {
               </p>
             </div>
 
-            <div className='w-5/6'>
-              <button className="flex h-24 items-center rounded-3xl text-white text-3xl bg-blue-500 hover:bg-blue-700 focus:ring-200 font-bold text-md px-12 pr-6 " onClick={() => navigate("/schedule")}><p className='pr-4'>CHECK PROGRAM <br /> SCHEDULE</p> <FaArrowRight size={34}/></button>
+            <div className='mx-auto justify-center'>
+              <button className="flex w-80 h-24 items-center font-bold text-xl px-12 pr-6 rounded-3xl text-white bg-blue-500 hover:bg-blue-700 focus:ring-200" onClick={() => navigate("/schedule")}><p className='pr-4'>CHECK PROGRAM <br /> SCHEDULE</p> <FaArrowRight size={24}/></button>
             </div>
+
             
-              
           </div>
 
         </div>
 
 
         {/* GUIDELINES */}
-        <div className='container w-full grid grid-cols-3 pl-16 pt-4 items-center text-blue-900'>
-          <div className='container p-4 pl-0 mt-5 col-span-2'>
-            <h2 className="text-4xl font-bold mb-4 ">GUIDELINES FOR ABSTRACT SUBMISSION</h2>
+        <div className="container w-full flex flex-col items-center pl-16 pt-4 text-blue-900">
+          <div className="w-full p-4 pl-0 mt-5">
+            <h2 className="text-4xl font-bold mb-4">GUIDELINES FOR ABSTRACT SUBMISSION</h2>
             <ul className="list-disc text-xl pl-4 mb-4">
               <li className="mb-2">
                 The abstract should not be more than 300 words of original research or review article reflecting the sub-themes.
@@ -134,7 +133,7 @@ const Attending = () => {
               <li className="mb-2">
                 All abstracts must be written and submitted in clear English Language.
               </li>
-              <li className="mb-2">
+              <li className="mb-2 pr-68 lg:pr-72">
                 The title should be in bold capital letters followed by the full name(s) (surname first) and address(es) of the author(s) including email address(es) and phone number(s) of the corresponding author.
               </li>
               <li className="mb-2">
@@ -142,10 +141,6 @@ const Attending = () => {
               </li>
             </ul>
           </div>
-          <div className='ml-44'> 
-            <img src={logo} className="w-[340px] h-[300px]" alt="Image description"/>
-          </div>
-
         </div>
 
       </div>
