@@ -111,7 +111,7 @@ const Attending = () => {
             </div>
 
             <div className='w-5/6'>
-              <button className="flex h-20 items-center rounded-3xl text-white text-3xl bg-blue-500 hover:bg-blue-700 focus:ring-200 font-bold text-md px-12 pr-6" onClick={() => navigate("/schedule")}><p className='pr-4'>CHECK PROGRAM <br /> SCHEDULE</p> <FaArrowRight size={34}/></button>
+              <button className="flex h-24 items-center rounded-3xl text-white text-3xl bg-blue-500 hover:bg-blue-700 focus:ring-200 font-bold text-md px-12 pr-6 " onClick={() => navigate("/schedule")}><p className='pr-4'>CHECK PROGRAM <br /> SCHEDULE</p> <FaArrowRight size={34}/></button>
             </div>
             
               

@@ -96,7 +96,7 @@ const Homepage = () => {
     return (
         <>
             <HomepageNavbar />
-            <div className="pb-12 hero-bg select-none bg-[#ecf1f7]">
+            <div className="hero-bg select-none bg-[#ecf1f7]">
 
                 <div className="flex flex-wrap p-5">  
                     <div className="w-full md:w-1/2 pl-14 space-y-8 pt-24 pb-7">

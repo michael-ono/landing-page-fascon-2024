@@ -8,6 +8,10 @@ const Registration = () => {
 
   const handleCloseModal = () => {
     setShowModal(false);
+  };
+
+  const handleSuccessModal = () => {
+    setShowModal(false);
     toast.success("Thanks for the purchase. Enjoy");
   };
 
@@ -19,7 +23,7 @@ const Registration = () => {
     <div className='bg-[#ecf1f7]'>
       <Toaster />
       <HomepageNavbar />
-      <div className="container mx-auto p-4 mt-6">
+      <div className="container mx-auto p-4 mt-4">
         <h1 className="text-6xl font-bold mb-4 text-blue-900">Registration</h1>
         <p className="text-xl mb-4">Registration for FASCON 2024 is now open!!</p>
         <h3 className="text-xl font-bold mb-4">Points to note</h3>
@@ -76,27 +80,33 @@ const Registration = () => {
                 </tbody>
         </table>
 
-          <button className='text-white mt-6 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center' onClick={handleOpenModal}>Make Payment</button>
-          {showModal && (
-    <div className="fixed inset-0 flex items-center justify-center z-50 bg-opacity-50 bg-gray-900">
-    <div className="bg-white rounded-lg p-8">
-      <h2 className="text-2xl font-bold mb-4">Payment Details</h2>
-      <div className='text-black'>
-        <p className='text-black text-xl'><strong className='text-black text-lg'>Account Name:</strong> FASCON Lead City University</p>
-        <p className='text-black text-xl'><strong className='text-black text-lg'>Account Number:</strong> 1014715731</p>
-        <p className='text-black text-xl'><strong className='text-black text-lg'>Bank Name:</strong> Zenith Bank</p>
-      </div>
-      <div className="flex justify-end mt-4 gap-12">
-        {/* <button onClick={handleCloseModal}>Close</button> */}
-        <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-4"  onClick={handleCloseModal}>
-          I have made Payment
-        </button>
-      </div>
-    </div>
-  </div>
-          )}
-
-      </div> 
+        <button className='text-white mt-4 bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-md w-full sm:w-auto py-3 px-3 text-center' onClick={handleOpenModal}>Make payment</button>
+        {showModal && (
+          <div className="fixed inset-0 flex items-center justify-center z-50 bg-opacity-50 bg-gray-900">
+            <div className="bg-white rounded-lg p-12">
+              <h2 className="text-2xl font-normal mb-4 border-b-4 border-grey-700">Kindly make payment to the account provided below</h2>
+              <div className='flex my-8'>
+                <div className='flex flex-col text-left pr-10'>
+                  <strong className='text-black text-xl tracking-wider'>Account Name:</strong> 
+                  <strong className='text-black text-xl tracking-wider'>Account Number:</strong>
+                  <strong className='text-black text-xl tracking-wider'>Bank Name:</strong> 
+                </div>
+                <div className='text-blue-900 text-lg'>
+                  <p>FASCON Lead City University</p>
+                  <p>1014715731</p>
+                  <p>Zenith Bank</p>
+                </div>
+              </div>
+              <div className="flex justify-end mt-4 gap-8">
+                <button  className='bg-gray-300 px-6 rounded' onClick={handleCloseModal}>Go back</button>
+                <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-4"  onClick={handleSuccessModal}>
+                  I have made Payment
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+    </div> 
       <Footer />
     </div> 
   )
