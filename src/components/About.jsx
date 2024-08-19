@@ -8,7 +8,7 @@ import Footer from '../Navbar_Files/Footer';
 
 export default function About() {
     return (
-        <div className='bg-[#c7d4e6]'>
+        <div className='bg-[#ecf1f7]'>
             <HomepageNavbar />
             <div className='flex flex-col mx-auto mt-4 pb-8 items-center justify-center gap-y-4'>
                 <img src={aboutLogo} className='w-28 h-24' alt="Image description"/> 
