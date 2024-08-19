@@ -1,7 +1,8 @@
 import React from "react";
 import toast, { Toaster } from 'react-hot-toast';
-import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaEnvelope, FaFileInvoice, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
+import { FaRegEnvelope } from "react-icons/fa";
 import HomepageNavbar from "../HomePage_Files/HomepageNavbar";
 
 const Contact = () => {
@@ -21,10 +22,10 @@ const Contact = () => {
               provided as soon as possible
             </p>
           </div> */}
-          <div className="mx-auto pt-10 h-[88vh]">
-            <div className="max-w-md mx-auto  bg-[#ecf1f7] text-black rounded-md shadow-sm">
-              <div className="text-center pt-2">
-                <h1 className="my-3 text-[2.8rem] font-semibold">
+          <div className="pt-10 h-[88vh]">
+            <div className="max-w-md mx-auto bg-[#ecf1f7] text-black rounded-md shadow-sm">
+              <div className="text-center pt-8">
+                <h1 className="my-3 text-[3.2rem] text-blue-900 font-semibold">
                   Contact Us
                 </h1>
                 <p className="text-[1.4rem]">
@@ -35,25 +36,25 @@ const Contact = () => {
                 <form name="contact" className="flex flex-col items-center" onSubmit={(e) => e.preventDefault}>
 
                   {/* name */}
-                  <div className="flex mb-6 text-white">                                        
+                  <div className="flex mb-6">                                        
                     <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                       <FiUser />
                     </div>
                     <input
                       type="text"
-                      className="min-w-[30rem] -ml-10 pl-10 pr-3 py-4 rounded-full border-2 border-gray-400 outline-none focus:border-indigo-500"
+                      className="min-w-[34rem] -ml-10 pl-10 pr-3 py-4 rounded-xl border-2 border-gray-400 outline-none focus:border-indigo-500"
                       placeholder="Name"
                     />
                   </div>
 
                   {/* email */}
-                  <div className="flex mb-6 text-white">                                        
+                  <div className="flex mb-6">                                        
                     <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-                      <FiUser />
+                      <FaRegEnvelope />
                     </div>
                     <input
                       type="email"
-                      className="min-w-[30rem] -ml-10 pl-10 pr-3 py-4 rounded-full border-2 border-gray-400 outline-none focus:border-indigo-500"
+                      className="min-w-[34rem] -ml-10 pl-10 pr-3 py-4 rounded-xl border-2 border-gray-400 outline-none focus:border-indigo-500"
                       placeholder="Email"
                     />
                   </div>
@@ -86,8 +87,8 @@ const Contact = () => {
           </div>
         </div>
         {/* Right */}
-        <div className="md:w-2/5  gradient-image bg-600 ">
-          <div className="hidden md:flex text-[#ffffff] justify-center gap-x-8 pt-[40%]">
+        <div className="md:w-2/5  gradient-image bg-600 h-[100vh]">
+          <div className="hidden md:flex text-[#ffffff] justify-center gap-x-16 pt-[40%]">
             <a href="https://www.facebook.com">
               <FaLinkedin name="FaFacebook" size={25} />
             </a>
