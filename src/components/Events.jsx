@@ -34,7 +34,7 @@ const Events = () => {
 
         <h2 className="text-3xl font-bold mt-8 mb-8">Full At-A-Glance Schedule</h2>
         <h3 className="text-xl font-bold mb-2">Below is the full at-a-glance version of the FASCON 2024 schedule. Session details are provided below.</h3>
-        <table className="w-full text-smtext-left text-gray-800 border-4 border-grey-600">
+        <table className="w-full text-sm text-gray-800 border-4 border-grey-600">
             <thead className="text-xs text-black uppercase bg-gray-50 border-b-4">
             <tr>
                 <th scope="col" className="py-3 px-6 text-[1.4rem] font-bold">Date</th>

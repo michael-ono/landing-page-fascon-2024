@@ -41,7 +41,7 @@ const Registration = () => {
 
         <h2 className="text-2xl font-bold mb-8">Registration Rates</h2>
         {/* <h3 className="text-xl font-bold mb-2">In-Person Full Conference Options:</h3> */}
-        <table class="w-full text-smtext-left text-gray-800 border-4 border-grey-600">
+        <table class="w-full text-sm text-gray-800 border-4 border-grey-600">
                 <thead class="text-xs text-black uppercase bg-gray-50 border-b-4">
                 <tr>
                     <th scope="col" class="py-3 px-6 text-[1.4rem] font-bold">Type</th>
@@ -101,7 +101,7 @@ const Registration = () => {
                 </div>
               </div>
               <div className="flex justify-end mt-4 gap-8">
-                <button  className='bg-gray-300 px-6 rounded' onClick={handleCloseModal}>Go back</button>
+                <button  className='bg-gray-300 hover:bg-gray-400 px-6 rounded' onClick={handleCloseModal}>Go back</button>
                 <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-4"  onClick={handleSuccessModal}>
                   I have made Payment
                 </button>
