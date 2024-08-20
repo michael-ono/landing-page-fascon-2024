@@ -42,7 +42,7 @@ const Registration = () => {
         <h2 className="text-2xl font-bold mb-8">Registration Rates</h2>
         {/* <h3 className="text-xl font-bold mb-2">In-Person Full Conference Options:</h3> */}
         <table class="w-full text-sm text-gray-800 border-4 border-grey-600">
-                <thead class="text-xs text-black uppercase bg-gray-50 border-b-4">
+                <thead class="text-xs text-black uppercase bg-gray-300 border-b-4">
                 <tr>
                     <th scope="col" class="py-3 px-6 text-[1.4rem] font-bold">Type</th>
                     <th scope="col" class="py-3 px-6 text-[1.4rem] font-bold">Amount</th>
