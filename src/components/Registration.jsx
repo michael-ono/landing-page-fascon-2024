@@ -31,10 +31,10 @@ const Registration = () => {
         <p className="text-xl mb-4">Registration for FASCON 2024 is now open!!</p>
         <h3 className="text-xl font-bold mb-4">Points to note</h3>
         <ul className="list-disc pl-4 mb-4">
-          <li className="text-md mb-2">
-            Accommodation options while attending the conference can be found <a className="text-blue-500 hover:text-blue-700" onClick={() => navigate('/accomdation')}>here</a>.
+          <li className="text-lg mb-2">
+            Accommodation options while attending the conference can be found <a className="text-blue-500 hover:text-blue-700 cursor-pointer" onClick={() => navigate('/register/accomodation')}>here</a>.
           </li>
-          <li className="text-md mb-2">
+          <li className="text-lg mb-2">
             Late registration will attract a penalty of ₦40,000 per participant.
           </li>
         </ul>

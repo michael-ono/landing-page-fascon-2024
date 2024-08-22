@@ -4,9 +4,9 @@ import Footer from '../Navbar_Files/Footer'
 
 const Accomodation = () => {
   return (
-    <div>
+    <div className='bg-[#ecf1f7]'>
       <HomepageNavbar />
-      <h1 className='text-5xl pl-6 pt-4 font-bold text-blue-900 '>Accomodation</h1>
+      <h1 className='text-5xl pl-6 pt-6 font-bold text-blue-900'>Accomodation</h1>
       <h1 className='text-2xl pl-6 pt-4 font-bold'>Below are the accomodation options:</h1>
       <div className='px-16 pb-16'>
         <table class="w-full text-sm mt-10 text-gray-800 border-4 border-grey-600">

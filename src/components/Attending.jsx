@@ -1,10 +1,9 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
-import atttendingImg from "../assets/attending-bg.jpeg";
+import LogoFascon from "./images/logo2.png";
 import Footer from '../Navbar_Files/Footer';
 import { FaArrowRight } from 'react-icons/fa';
-// import Footer2 from '../Navbar_Files/Footer2';
+
 const Attending = () => {
 
   const navigate = useNavigate();
@@ -15,7 +14,10 @@ const Attending = () => {
     <div className='w-full bg-[#ecf1f7]'>
       
       <div>
-
+        <div className='flex py-10 gap-6 justify-center items-center bg-yellow-50'>
+          <h1 className='text-deep-orange-500 text-4xl font-extrabold'>Theme:</h1>
+          <h4 className='text-2xl font-bold w-1/2'>Emerging Technologies in Scientific Research and Innovation for Sustainable National Development</h4>
+        </div>
         {/* SPEAKERS */}
         <div className='flex pr-44'>
           <div className="container pl-20 pt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -52,8 +54,9 @@ const Attending = () => {
               </div>
             </div>
           </div>
-          <div className='flex flex-col justify-center items-center text-center'>
-            <h1 className='text-3xl font-bold text-red-400 pb-5'>Abstract admission is now open!</h1>
+          <div className='flex flex-col justify-center items-center text-center gap-y-4'>
+            <img src={LogoFascon} className="w-[340px] h-[130px] pb-4" alt="fascon logo" />
+            <h1 className='text-3xl font-bold text-red-400 pb-5'>Abstract admission is now open!!!</h1>
             <p className='text-2xl'>Submit an abstract by 30" August 2024 to fascon@lcu.edu.ng with an email Subject containing the author's name.</p>
           </div>
         </div>
@@ -110,19 +113,19 @@ const Attending = () => {
             </div>
 
             <div className='mx-auto justify-center'>
-              <button className="flex w-80 h-24 items-center font-bold text-xl px-12 pr-6 rounded-3xl text-white bg-blue-500 hover:bg-blue-700 focus:ring-200" onClick={() => navigate("/schedule")}><p className='pr-4'>CHECK PROGRAM <br /> SCHEDULE</p> <FaArrowRight size={24}/></button>
+              <button className="flex items-center font-bold text-xl px-4 py-4 rounded-3xl text-white bg-blue-500 hover:bg-blue-700 focus:ring-200 md:w-80 md:h-24 md:px-12 md:pr-6" onClick={() => navigate("/schedule")}>
+                <p className='pr-4'>CHECK PROGRAM <br /> SCHEDULE</p> 
+                <FaArrowRight size={24}/>
+              </button>
             </div>
 
-            
           </div>
-
         </div>
-
 
         {/* GUIDELINES */}
         <div className="container w-full flex flex-col items-center pl-16 pt-4 text-blue-900">
           <div className="w-full p-4 pl-0 mt-5">
-            <h2 className="text-4xl font-bold mb-4">GUIDELINES FOR ABSTRACT SUBMISSION</h2>
+            <h2 className="text-4xl text-pink-600 font-bold mb-4">GUIDELINES FOR ABSTRACT SUBMISSION</h2>
             <ul className="list-disc text-xl pl-4 mb-4">
               <li className="mb-2">
                 The abstract should not be more than 300 words of original research or review article reflecting the sub-themes.
@@ -144,9 +147,6 @@ const Attending = () => {
         </div>
 
       </div>
-
-
-
 
     </div>
   </>
