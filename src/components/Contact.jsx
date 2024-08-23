@@ -13,27 +13,31 @@ const Contact = () => {
       <Toaster />
       <HomepageNavbar />
       <div className="md:flex justify-between bg-[#ecf1f7] overflow-hidden text-black">
+        {/* Left */}
         <div className="md:w-3/5 md:mb-0 px-3">
-          {/* <div className="">
-            <h2 className="text-[2rem] md:text-[2.2rem] lg:text-[2.5rem] text-black font-bold">
-              Help & Support
-            </h2>
-            <p className="mb-5 text-black text-[0.9rem] md:text-[1rem]">
-              Submit your question and our team we will respond to the email
-              provided as soon as possible
-            </p>
-          </div> */}
-          <div className="pt-1 ]">
-            <div className="max-w-md mx-auto bg-[#ecf1f7] text-black rounded-md shadow-sm">
-              <div className="text-center pt-8">
-                <h1 className="text-[3.2rem] text-blue-900 font-semibold">
+            <div className="bg-[#ecf1f7] text-black rounded-md shadow-sm">
+              <div className="text-center mx-auto pt-8 pb-8">
+                <h1 className="text-[3.2rem] pb-6 text-blue-900 font-semibold">
                   Contact Us
                 </h1>
-                <p className="text-[1.4rem]">
-                  Fill in this form to send me a message.
-                </p>
+
+                <div className="w-[85%] mx-auto px-4 py-4 bg-blue-300 rounded-xl text-center text-white space-y-4">
+                  <div className="flex flex-col">
+                    <h1 className="text-3xl font-extrabold text-pink-500">LOC Secertary: MR S.O. ILUGBO</h1>
+                    <p className="text-2xl font-semibold">+234 810 324 3668</p>
+                  </div>
+                  <div className="flex flex-col">
+                    <h1 className="text-3xl font-extrabold text-pink-500">Logistics: DR O.O. JOHN-DEWOLE</h1>
+                    <p className="text-2xl font-semibold">+234 803 496 8640</p>
+                  </div>
+                </div>
               </div>
+
+              {/* FORM */}
               <div className="m-4">
+                <p className="text-[1.4rem] pb-4 font-semibold text-center">
+                  You can also fill this form to send a message.
+                </p>
                 <form name="contact" className="flex flex-col items-center" onSubmit={(e) => e.preventDefault}>
 
                   {/* name */}
@@ -43,7 +47,7 @@ const Contact = () => {
                     </div>
                     <input
                       type="text"
-                      className="min-w-[34rem] -ml-10 pl-10 pr-3 py-4 rounded-xl border-2 border-gray-400 outline-none focus:border-indigo-500"
+                      className="min-w-[34rem] -ml-10 pl-10 pr-3 py-3 rounded-xl border-2 border-gray-400 outline-none focus:border-indigo-500"
                       placeholder="Name"
                     />
                   </div>
@@ -55,7 +59,7 @@ const Contact = () => {
                     </div>
                     <input
                       type="email"
-                      className="min-w-[34rem] -ml-10 pl-10 pr-3 py-4 rounded-xl border-2 border-gray-400 outline-none focus:border-indigo-500"
+                      className="min-w-[34rem] -ml-10 pl-10 pr-3 py-3 rounded-xl border-2 border-gray-400 outline-none focus:border-indigo-500"
                       placeholder="Email"
                     />
                   </div>
@@ -68,7 +72,7 @@ const Contact = () => {
                       name="message"
                       id="message"
                       placeholder="Your message"
-                      className="min-w-[34rem] px-3 py-2 text-black placeholder-gray-400 border border-gray-900 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+                      className="min-w-[34rem] h-32 px-3 py-2 text-black placeholder-gray-400 border border-gray-900 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
                     >
                     </textarea>
                   </div>
@@ -85,7 +89,7 @@ const Contact = () => {
                 </form>
               </div>
             </div>
-          </div>
+
         </div>
         {/* Right */}
         <div className="md:w-2/5  gradient-image bg-600 h-[100vh]">
