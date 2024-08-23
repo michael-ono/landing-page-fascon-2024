@@ -4,6 +4,7 @@ import { FaEnvelope, FaFileInvoice, FaInstagram, FaLinkedin, FaTwitter } from "r
 import { FiUser } from "react-icons/fi";
 import { FaRegEnvelope } from "react-icons/fa";
 import HomepageNavbar from "../HomePage_Files/HomepageNavbar";
+import Footer from "../Navbar_Files/Footer";
 
 const Contact = () => {
 
@@ -22,17 +23,17 @@ const Contact = () => {
               provided as soon as possible
             </p>
           </div> */}
-          <div className="pt-10 h-[88vh]">
+          <div className="pt-1 ]">
             <div className="max-w-md mx-auto bg-[#ecf1f7] text-black rounded-md shadow-sm">
               <div className="text-center pt-8">
-                <h1 className="my-3 text-[3.2rem] text-blue-900 font-semibold">
+                <h1 className="text-[3.2rem] text-blue-900 font-semibold">
                   Contact Us
                 </h1>
                 <p className="text-[1.4rem]">
                   Fill in this form to send me a message.
                 </p>
               </div>
-              <div className="m-7">
+              <div className="m-4">
                 <form name="contact" className="flex flex-col items-center" onSubmit={(e) => e.preventDefault}>
 
                   {/* name */}
@@ -72,10 +73,10 @@ const Contact = () => {
                     </textarea>
                   </div>
 
-                  <div className="px-8 pt-8">
+                  <div className="px-8">
                     <button
                       type="button"
-                      className="w-full py-5 px-8 text-white bg-[#4a9455f7] rounded-full hover:bg-[#193152] focus:outline-none"
+                      className="w-full py-3 px-8 text-white bg-[#4a9455f7] rounded-full hover:bg-[#193152] focus:outline-none"
                       onClick={() => toast.success('Message sent successfully', { duration: 2000 })}
                     >
                       Send Message
@@ -101,6 +102,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

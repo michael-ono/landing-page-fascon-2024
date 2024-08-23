@@ -14,9 +14,9 @@ const Attending = () => {
     <div className='w-full bg-[#ecf1f7]'>
       
       <div>
-        <div className='flex py-10 gap-6 justify-center items-center bg-yellow-50'>
+        <div className='flex py-10 gap-8 justify-center items-center bg-yellow-50'>
           <h1 className='text-deep-orange-500 text-4xl font-extrabold'>Theme:</h1>
-          <h4 className='text-2xl font-bold w-1/2'>Emerging Technologies in Scientific Research and Innovation for Sustainable National Development</h4>
+          <h4 className='text-2xl font-bold w-1/2'>Emerging Technologies in Scientific Research <br /> and Innovation for Sustainable National Development</h4>
         </div>
         {/* SPEAKERS */}
         <div className='flex pr-44'>
