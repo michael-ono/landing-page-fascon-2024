@@ -123,8 +123,8 @@ const Attending = () => {
         </div>
 
         {/* GUIDELINES */}
-        <div className="container w-full flex flex-col items-center pl-16 pt-4 text-blue-900">
-          <div className="w-full p-4 pl-0 mt-5">
+        <div className="container w-full grid grid-cols-3 items-center pl-16 pt-4 text-blue-900">
+          <div className="w-full p-4 pl-0 mt-5 col-span-2">
             <h2 className="text-4xl text-pink-600 font-bold mb-4">GUIDELINES FOR ABSTRACT SUBMISSION</h2>
             <ul className="list-disc text-xl pl-4 mb-4">
               <li className="mb-2">
@@ -144,6 +144,20 @@ const Attending = () => {
               </li>
             </ul>
           </div>
+
+          <div className="px-4 py-4 ml-12 w-full h-full bg-blue-100 place-content-center rounded-xl text-center text-white space-y-4 col-span-1 ">
+            <h1 className="text-3xl font-extrabold text-gray-600 place-content-start align-top">For Further Inquires:</h1>
+            <div className='w-full border-b-4 border-gray-50'></div>
+            <div className="flex flex-col pb-5 pt-16">
+              <h1 className="text-2xl font-extrabold text-pink-500">LOC Secertary: MR S.O. ILUGBO</h1>
+              <p className="text-xl text-black font-semibold">+234 810 324 3668</p>
+            </div>
+            <div className="flex flex-col">
+              <h1 className="text-2xl font-extrabold text-pink-500">Logistics: DR O.O. JOHN-DEWOLE</h1>
+              <p className="text-xl text-black font-semibold">+234 803 496 8640</p>
+            </div>
+          </div>
+          
         </div>
 
       </div>
