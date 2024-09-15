@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import Logo from "../components/images/logo2.png"
+import Logo from "../components/images/logo6.png"
 import { CgMenu, CgChevronDown } from 'react-icons/cg';
 
 function HomepageNavbar() {
@@ -37,8 +37,9 @@ function HomepageNavbar() {
             { title: "Organizers", path: "/about/organizers" }
         ]},
         { title: "SCHEDULE", path: "/schedule" },
-        { title: "REGISTRATION", path: "/register/confrence", subMenu: [
-            { title: "Confrence", path: "/register/confrence" },
+        { title: "REGISTRATION", path: "/register", subMenu: [
+            { title: "Register", path: "/register/user" },
+            { title: "Payment", path: "/register/payment" },
             { title: "Accomodation", path: "/register/accomodation" },
         ]},
         { title: "CONTACT US", path: "/contact" },
@@ -58,7 +59,7 @@ function HomepageNavbar() {
             <nav className="flex justify-between items-center w-[92%] mx-auto">
                 <div>
                     <div className="inline-block mr-2 cursor-pointer" onClick={() => navigate("/")}>
-                        <img src={Logo} className="h-26 w-20 inline-block transform -translate-y-2" alt="Logo" />
+                        <img src={Logo} className="h-12 w-12 inline-block transform -translate-y-2" alt="Logo" />
                     </div>
                     <span
                         className="text-xl sm:text-3xl font-semibold inline-block mb-2">

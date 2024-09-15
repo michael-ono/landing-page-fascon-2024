@@ -16,6 +16,7 @@ import Updates from "./components/Updates";
 import Contact from "./components/Contact";
 import Events from "./components/Events";
 import Accomodation from "./components/Accomodation";
+import Payment from "./components/Payment";
 
 function App() {
 
@@ -25,13 +26,14 @@ function App() {
       <Route path="/" exact element={<Homepage />} />
       <Route path="/about/program" element={<About />} />
       <Route path="/about/organizers" element={<Organizers />} />
-      <Route path="/register/confrence" element={<Registration />} />
+      <Route path="/register/user" element={<Registration />} />
+      <Route path="/register/payment" element={<Payment/>} />
+      <Route path="/register/accomodation" element={<Accomodation/>} />
       <Route path="/attending" element={<Attending />} />
       <Route path="/updates" element={<Updates />} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/organizers" element={<Organizers />} />
       <Route path="/schedule" element={<Events/>} />
-      <Route path="/register/accomodation" element={<Accomodation/>} />
    
       {/* User */} 
       {/* <Route element={<PrivateRouteUser isLogged={userLogged} />}> */}

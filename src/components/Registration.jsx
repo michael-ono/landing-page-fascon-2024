@@ -5,114 +5,98 @@ import HomepageNavbar from '../HomePage_Files/HomepageNavbar';
 import Footer from '../Navbar_Files/Footer';
 
 const Registration = () => {
-  const [showModal, setShowModal] = useState(false);
 
   const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+  });
 
-  const handleCloseModal = () => {
-    setShowModal(false);
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  const handleSuccessModal = () => {
-    setShowModal(false);
-    toast.success("Thanks for the purchase. Enjoy");
-  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  const handleOpenModal = () => {
-    setShowModal(true);   
+    // Validate form data here
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.password || !formData.confirmPassword) {
+      toast.error("Please fill in all required fields.");
+      return;
+    }
+
+    if (formData.password !== formData.confirmPassword) {
+      toast.error("Passwords do not match.");
+      return;
+    }
+
+    // Handle form submission (e.g., send data to API)
+    try {
+      // Replace with your API call
+      const response = await fetch('/api/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast.success("Registration successful!");
+        navigate('/login'); // Redirect to login page
+      } else {
+        const data = await response.json();
+        toast.error(data.message || "Registration failed.");
+      }
+    } catch (error) {
+      toast.error("An error occurred during registration.");
+    }
   };
 
   return (
     <div className='bg-[#ecf1f7]'>
       <Toaster />
       <HomepageNavbar />
-      <div className="container mx-auto p-4 mt-4">
-        <h1 className="text-6xl font-bold mb-4 text-blue-900">Registration</h1>
-        <p className="text-xl mb-4">Registration for FASCON 2024 is now open!!</p>
-        <h3 className="text-xl font-bold mb-4">Points to note</h3>
-        <ul className="list-disc pl-4 mb-4">
-          <li className="text-lg mb-2">
-            Accommodation options while attending the conference can be found <a className="text-blue-500 hover:text-blue-700 cursor-pointer" onClick={() => navigate('/register/accomodation')}>here</a>.
-          </li>
-          <li className="text-lg mb-2">
-            Late registration will attract a penalty of ₦40,000 per participant.
-          </li>
-        </ul>
-
-        <h2 className="text-2xl font-bold mb-8">Registration Rates</h2>
-        {/* <h3 className="text-xl font-bold mb-2">In-Person Full Conference Options:</h3> */}
-        <table class="w-full text-sm text-gray-800 border-4 border-grey-600">
-                <thead class="text-xs text-black uppercase bg-gray-300 border-b-4">
-                <tr>
-                    <th scope="col" class="py-3 px-6 text-[1.4rem] font-bold">Type</th>
-                    <th scope="col" class="py-3 px-6 text-[1.4rem] font-bold">Amount</th>
-                    <th scope="col" class="py-3 px-6 text-[1.5rem] font-bold">Refundable</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="bg-white border-b ">
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">Students</td>
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">₦20,000</td>
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">No</td>
-                </tr>
-                <tr class="bg-white border-b  ">
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">Local Participants</td>
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">₦30,000</td>
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">No</td>
-                </tr>
-                <tr class="bg-white border-b  ">
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">International Participants</td>
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">$100</td>
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">No</td>
-                </tr>
-                <tr class="bg-white border-b  ">
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">Late Restration</td>
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">₦40,000</td>
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">No</td>
-                </tr>
-                <tr class="bg-white ">
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">Late Interational</td>
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">$150</td>
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">No</td>
-                </tr>
-                <tr class="bg-white ">
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">Exhibition</td>
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">₦20,000 or $150</td>
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">No</td>
-                </tr>
-                </tbody>
-        </table>
-
-        <button className='text-white mt-4 bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-md w-full sm:w-auto py-3 px-3 text-center' onClick={handleOpenModal}>Make payment</button>
-        {showModal && (
-          <div className="fixed inset-0 flex items-center justify-center z-50 bg-opacity-50 bg-gray-900">
-            <div className="bg-white rounded-lg p-12">
-              <h2 className="text-2xl font-normal mb-4 border-b-4 border-grey-700">Kindly make payment to the account provided below</h2>
-              <div className='flex my-8'>
-                <div className='flex flex-col text-left pr-10'>
-                  <strong className='text-black text-xl tracking-wider'>Account Name:</strong> 
-                  <strong className='text-black text-xl tracking-wider'>Account Number:</strong>
-                  <strong className='text-black text-xl tracking-wider'>Bank Name:</strong> 
-                </div>
-                <div className='text-blue-900 text-lg'>
-                  <p>FASCON Lead City University</p>
-                  <p>1014715731</p>
-                  <p>Zenith Bank</p>
-                </div>
-              </div>
-              <div className="flex justify-end mt-4 gap-8">
-                <button  className='bg-gray-300 hover:bg-gray-400 px-6 rounded' onClick={handleCloseModal}>Go back</button>
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-4"  onClick={handleSuccessModal}>
-                  I have made Payment
-                </button>
-              </div>
-            </div>
+      <div className="registration-bg h-[84vh] pt-4 ">
+        <div className='w-[70%]  mx-auto items-center justify-center'>
+          <div className='text-center leading-tight'>
+            <h1 className="text-[4.6rem] font-bold mb-4 text-white tracking-wider">Registration</h1>
+            <p className="text-xl text-flashWhite font-semibold mb-4">Registration for FASCON 2024 is now open!!</p>
           </div>
-        )}
-    </div> 
+          <form onSubmit={handleSubmit} className='w-full mx-auto pt-12 justify-center items-center max-w-md'>
+            <div className="mb-4 flex flex-col">
+              <label htmlFor="firstName" className="block text-gray-400 font-bold mb-2">First Name</label>
+              <input type="text" id="firstName" name="firstName" className="w-full px-4 py-2 border border-gray-400 rounded-lg focus:outline-none focus:border-blue-500" value={formData.firstName} onChange={handleChange} required />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="lastName" className="block text-gray-400 font-bold mb-2">Last Name</label>
+              <input type="text" id="lastName" name="lastName" className="w-full px-4 py-2 border border-gray-400 rounded-lg focus:outline-none focus:border-blue-500" value={formData.lastName} onChange={handleChange} required />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="email" className="block text-gray-400 font-bold mb-2">Email</label>
+              <input type="email" id="email" name="email" className="w-full px-4 py-2 border border-gray-400 rounded-lg focus:outline-none focus:border-blue-500" value={formData.email} onChange={handleChange} required />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="password" className="block text-gray-400 font-bold mb-2">Password</label>
+              <input type="password" id="password" name="password" className="w-full px-4 py-2 border border-gray-400 rounded-lg focus:outline-none focus:border-blue-500" value={formData.password} onChange={handleChange} required />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="confirmPassword" className="block text-gray-400 font-bold mb-2">Confirm Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" className="w-full px-4 py-2 border border-gray-400 rounded-lg focus:outline-none focus:border-blue-500" value={formData.confirmPassword} onChange={handleChange} required />
+            </div>
+            <div className='flex justify-center pt-4'><button type="submit" className="bg-blue-500 text-white text-xl flex font-bold py-3 px-10 rounded-lg hover:bg-blue-700 ">Sign Up</button></div>
+          </form>
+        </div>
+      </div>
       <Footer />
-    </div> 
-  )
+    </div>
+  );
 };
 
 export default Registration;

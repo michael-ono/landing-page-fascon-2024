@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import LogoFascon from "./images/logo2.png";
-import Footer from '../Navbar_Files/Footer';
+import LogoFascon from "./images/logo6.png";
 import { FaArrowRight } from 'react-icons/fa';
 
 const Attending = () => {
@@ -53,7 +52,7 @@ const Attending = () => {
             </div>
           </div>
           <div className='flex flex-col justify-center items-center text-center gap-y-4'>
-            <img src={LogoFascon} className="w-[340px] h-[130px] pb-4" alt="fascon logo" />
+            <img src={LogoFascon} className="w-[150px] h-[130px] pb-4" alt="fascon logo" />
             <h1 className='text-3xl font-bold text-red-400 pb-5'>Abstract admission is now open!!!</h1>
             <p className='text-2xl'>Submit an abstract by 30th August 2024 to fascon@lcu.edu.ng with an email Subject containing the author's name.</p>
           </div>
@@ -144,10 +143,10 @@ const Attending = () => {
           </div>
 
           <div className="px-4 py-4 ml-12 w-full h-full bg-blue-100 place-content-center rounded-xl text-center text-white space-y-4 col-span-1 ">
-            <h1 className="text-3xl font-extrabold text-gray-600 place-content-start align-top">For Further Inquires:</h1>
+            <h1 className="text-3xl font-extrabold text-gray-600 place-content-start align-top">For Further Enquires:</h1>
             <div className='w-full border-b-4 border-gray-50'></div>
             <div className="flex flex-col pb-5 pt-16">
-              <h1 className="text-2xl font-extrabold text-pink-500">LOC Secertary: MR S.O. ILUGBO</h1>
+              <h1 className="text-2xl font-extrabold text-pink-500">LOC Secretary: MR S.O. ILUGBO</h1>
               <p className="text-xl text-black font-semibold">+234 810 324 3668</p>
             </div>
             <div className="flex flex-col">

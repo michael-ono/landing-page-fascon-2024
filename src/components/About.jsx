@@ -17,7 +17,7 @@ export default function About() {
                 <img src={aboutConfence} className='w-[48rem] h-[15rem]' alt="Image description"/> 
                 <div className='flex gap-6 justify-center items-center mt-12'>
                     <h1 className='text-deep-orange-500 text-2xl font-extrabold'>Theme:</h1>
-                    <h4 className='text-xl font-bold w-1/2'>Emerging Technologies in Scientific Research and Innovation for Sustainable ational Development</h4>
+                    <h4 className='text-xl font-bold w-1/2'>Emerging Technologies in Scientific Research and Innovation for Sustainable National Development</h4>
                 </div>
                 <div className='flex gap-6 p-3 justify-center items-center border-2 border-black'>
                     <h1 className='text-2xl font-bold'>Date: 28th - 30th October, 2024</h1> |
@@ -25,7 +25,7 @@ export default function About() {
                 </div>
                 <div className="flex gap-6 justify-center items-center">
                    <div><FaMapMarkerAlt className="text-lg text-red-500 mr-2" /></div>
-                    <h1 className='text-2xl font-bold'>International Confrence Centre <br /> Lead City, Ibadan </h1>
+                    <h1 className='text-2xl font-bold'>International Confrence Centre, <br /> Lead City University, Ibadan. </h1>
                 </div>
             </div>
             <Footer />

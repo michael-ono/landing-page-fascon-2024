@@ -21,20 +21,19 @@
     background-image: url("./assets/shiny-overlay4.png");
 }
 
-.about-bg {
-    /* height: 100vh;
+.contact-bg {
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./assets/homepageBg2.svg"); */
+    background-image: url("../img/bg-contact.svg");
 }
 
-.registration-bg {
-    /* height: 100vh;
+.registration-bg{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./assets/homepageBg2.svg"); */
+    background-image: url("./assets/homepageBg2.svg");
 }
 
 .attending-bg {
