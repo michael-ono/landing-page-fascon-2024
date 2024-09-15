@@ -59,7 +59,7 @@ function HomepageNavbar() {
             <nav className="flex justify-between items-center w-[92%] mx-auto">
                 <div>
                     <div className="inline-block mr-2 cursor-pointer" onClick={() => navigate("/")}>
-                        <img src={Logo} className="h-12 w-12 inline-block transform -translate-y-2" alt="Logo" />
+                        <img src={Logo} className="h-10 w-10 inline-block transform -translate-y-2" alt="Logo" />
                     </div>
                     <span
                         className="text-xl sm:text-3xl font-semibold inline-block mb-2">

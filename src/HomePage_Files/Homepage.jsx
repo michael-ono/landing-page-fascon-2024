@@ -80,7 +80,7 @@ const Homepage = () => {
         }
     };
 
-    const registerPath = "/register/confrence"
+    const registerPath = "/register/user"
     const navigate = useNavigate();
 
     const navigateSignup = (path) => {
