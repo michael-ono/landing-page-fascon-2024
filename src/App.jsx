@@ -2,21 +2,15 @@ import { Route, Routes } from "react-router-dom";
 
 import Homepage from "./HomePage_Files/Homepage";
 import About from "./components/About";
-import HomeContact from "./HomePage_Files/HomeContact";
-
-import LoginForm from "./Login_Files/LoginForm";
-import RegisterForm from "./Login_Files/RegisterForm";
-import TutorRegister from "./Login_Files/TutorRegister";
-import LoginTutor from "./Login_Files/LoginTutor";
 
 import Organizers from "./components/Organizers";
-import Registration from "./components/Registration";
 import Attending from "./components/Attending";
 import Updates from "./components/Updates";
 import Contact from "./components/Contact";
 import Events from "./components/Events";
 import Accomodation from "./components/Accomodation";
 import Payment from "./components/Payment";
+import Registration from "./components/Registration";
 
 function App() {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+const FooterFixed = () => {
     return (
         <footer className="py-6 fixed bottom-0 left-0 right-0 bg-blue-gray-100">
             <div className="container mx-auto text-center text-sm">
@@ -11,4 +11,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default FooterFixed;

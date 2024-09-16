@@ -66,12 +66,12 @@ const Payment = () => {
                     <td class="py-4 px-6 font-bold text-[1.1rem] text-center">No</td>
                 </tr>
                 <tr class="bg-white border-b  ">
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">Late Restration</td>
+                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">Late Registration</td>
                     <td class="py-4 px-6 font-bold text-[1.1rem] text-center">₦40,000</td>
                     <td class="py-4 px-6 font-bold text-[1.1rem] text-center">No</td>
                 </tr>
                 <tr class="bg-white ">
-                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">Late Interational</td>
+                    <td class="py-4 px-6 font-bold text-[1.1rem] text-center">Late International</td>
                     <td class="py-4 px-6 font-bold text-[1.1rem] text-center">$150</td>
                     <td class="py-4 px-6 font-bold text-[1.1rem] text-center">No</td>
                 </tr>
