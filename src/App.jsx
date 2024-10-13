@@ -11,6 +11,8 @@ import Events from "./components/Events";
 import Accomodation from "./components/Accomodation";
 import Payment from "./components/Payment";
 import Registration from "./components/Registration";
+import HCIAgenda from "./components/HCIAgenda";
+import HCIParticipation from "./components/HCIParticipation";
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
       <Route path="/contact" element={<Contact/>} />
       <Route path="/organizers" element={<Organizers />} />
       <Route path="/schedule" element={<Events/>} />
+      <Route path="/hci-workshop/agenda" element={<HCIAgenda/>} />
+      <Route path="/hci-workshop/participation" element={<HCIParticipation/>} />
    
       {/* User */} 
       {/* <Route element={<PrivateRouteUser isLogged={userLogged} />}> */}

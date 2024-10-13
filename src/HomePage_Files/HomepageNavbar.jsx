@@ -43,6 +43,10 @@ function HomepageNavbar() {
             { title: "Accomodation", path: "/register/accomodation" },
         ]},
         { title: "CONTACT US", path: "/contact" },
+        { title: "HCI WORKSHOP", path: "/human-computer-interaction-workshop", subMenu: [
+            { title: "Agenda", path: "/hci-workshop/agenda" },
+            { title: "Participation", path: "/hci-workshop/participation" },
+        ]},
         { title: "FASCON 2024", path: "/" },
     ];
 
