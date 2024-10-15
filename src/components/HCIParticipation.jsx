@@ -6,7 +6,7 @@ const HCIParticipation = () => {
   return (
     <main className='h-screen bg-[#ecf1f7]'>
         <HomepageNavbar />
-        <div className='px-6'>
+        <div className='px-6 attending-bg'>
             <h1 className='text-5xl pl-6 pt-6 pb-5 font-bold text-center text-blue-900'>Human Computer Interaction workshop – Call for Participation</h1>
             <p className='pb-5 text-2xl'>
               We are happy to introduce the Human Computer Interaction (HCI) workshop for researchers, academics, students (Undergraduate & Postgraduate), early career researchers, industry professionals, and anyone interested in learning about Human Computer Interaction and how technology and user experience shape research and innovation across various disciplines.
