@@ -21,7 +21,7 @@ const HCIParticipation = () => {
               <li>Network with other researchers.</li>
             </ul>
             <p className='pb-5 text-2xl'>
-              We hope that participants will leave this workshop with ideas that they can explore and expand upon to improve their research practice.
+              Participants will leave this workshop with ideas that they can explore and expand upon to improve their research practice.
             </p>
 
             <p className='text-2xl'>
@@ -31,7 +31,7 @@ const HCIParticipation = () => {
               Though attendance is free, you will be asked to register as an in-person or virtual participant and provide the organizers with proof of the FASCON conference registration. More on FASCON conference: <a className='text-blue-700' href="https://fascon.lcu.edu.ng">https://fascon.lcu.edu.ng</a>
             </p>
             <p className='text-2xl'>
-              If you’d like to participate in the workshop, please complete this form expressing your interest by October 26th, 2024.
+              If you’d like to participate in the workshop, please complete <a className='text-blue-700' href="https://bit.ly/HCIFASCON">this form</a>expressing your interest by October 26th, 2024.
             </p>
             <p className='pt-12 font-bold text-3xl'>
               Questions?
