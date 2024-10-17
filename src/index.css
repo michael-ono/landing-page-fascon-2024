@@ -11,6 +11,12 @@
     background-image: linear-gradient(rgba(2, 1, 10, 0.697), rgba(5, 4, 10, 0.697)), url('./assets/bg-support.jpeg');
     overflow: hidden;
 }
+.gradient-image3 {    
+    background-image: linear-gradient(rgba(2, 1, 10, 0.697), rgba(5, 4, 10, 0.697)), url('./assets/hci-1c.png');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .hero-bg {
     /* background-color: #ecf1f7; */
