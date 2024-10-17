@@ -49,5 +49,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./assets/shiny-overlay4.png");
+    font-family: 'Arial, sans-serif';
+    background-image: url("./assets/hci-1.png"); 
 }
+.custom-font2 {
+    font-family: 'Georgia, serif';
+  }
+.custom-font3 {
+    font-family: 'Times New Roman, serif';
+  }

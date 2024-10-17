@@ -6,26 +6,26 @@ const HCIAgenda = () => {
   return (
     <main className='bg-[#ecf1f7] h-screen'>
       <HomepageNavbar />
-      <div className=''>
-        <section className='px-4'>
-          <h1 className='text-5xl pl-6 pt-6 font-bold text-center text-blue-900'>Human Computer Interaction (HCI) Workshop</h1>
+      <div className='space-y-4 hci-agenda-bg'>
+        <h1 className='text-5xl pl-6 pt-6 font-semibold text-center text-white custom-font'>Human Computer Interaction (HCI) Workshop</h1>
+        <section className='px-8 font-semibold text-white'>
           <p className='pt-5 text-2xl'>
-          The inaugural Human Computer Interaction Workshop is designed as a space for everyone that wants to know about the field <br /> 
-          of Human Computer Interaction. Researchers, academics, students (Undergraduate & Postgraduate), early career researchers, <br /> industry professionals, and anyone interested in how technology and user experience shape research and innovation across various disciplines, to:
+            The inaugural Human Computer Interaction Workshop is designed as a space for everyone that wants to know about the field <br /> 
+            of Human Computer Interaction. Researchers, academics, students (Undergraduate & Postgraduate), early career researchers, <br /> industry professionals, and anyone interested in how technology and user experience shape research and innovation across various disciplines to:
           </p>
-          <ul className='text-xl list-disc pl-12'>
-            <li>Learn about HCI methods and tools</li>
-            <li>Discover HCI trends and the future of the field</li>
-            <li>Discuss HCI's applications across various disciplines</li>
-            <li>Network with other researchers</li>
+          <ul className='text-[1.40rem] pt-2 pb-5 list-disc pl-12 custom-font'>
+            <li className='text-light-blue-800'>Learn about HCI methods and tools</li>
+            <li className='text-light-blue-800'>Discover HCI trends and the future of the field</li>
+            <li className='text-light-blue-800'>Discuss HCI's applications across various disciplines</li>
+            <li className='text-light-blue-800'>Network with other researchers</li>
           </ul>
-          <p className='py-5 text-2xl'> 
-            Featuring short talks and interactive sessions, this workshop will provide you with valuable insights and ideas to enhance your research practice.
+          <p className='text-2xl'> 
+            Featuring short talks and interactive sessions, this workshop will provide you  <br />  with valuable insights and ideas to enhance your research practice.
           </p>
         </section>
 
-        <section className='px-4'>
-          <h2 className='pb-4 text-2xl font-bold'>Location and Format</h2>
+        <section className='px-7 font-semibold'>
+          <h2 className='pb-2 text-3xl text-blue-900'>Location and Format</h2>
           <p className='text-2xl'>The workshop will be a hybrid event:</p>
           <ul className='text-2xl'>
             <li><span className='font-bold'>Virtual:</span> Online attendees will receive a Zoom link before the event.</li>
@@ -33,8 +33,8 @@ const HCIAgenda = () => {
           </ul>
         </section>
 
-        <section className='pt-5 pb-5 px-4'>
-          <h2 className='text-2xl text-blue-900 font-bold'>Schedule</h2>
+        <section className='pt-5 pb-5 px-7'>
+          <h2 className='text-3xl text-blue-900 font-bold'>Schedule</h2>
 
           <table className='table-auto text-2xl'>
               <thead>
